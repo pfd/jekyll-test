@@ -1,0 +1,996 @@
+<!DOCTYPE html>
+
+<html lang="en-us">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+
+  <title>SheerID JavaScript Library - SheerID Docs</title>
+  <link rel="stylesheet" href="http://localhost:4000/assets/css/just-the-docs.css">
+  
+  <script type="text/javascript" src="http://localhost:4000/assets/js/vendor/lunr.min.js"></script>
+  
+  <script type="text/javascript" src="http://localhost:4000/assets/js/just-the-docs.js"></script>
+
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+
+  <div class="page-wrap">
+    <div class="side-bar">
+      <a href="http://localhost:4000" class="site-title fs-6 lh-tight">SheerID Docs</a>
+      <span class="fs-3"><button class="js-main-nav-trigger navigation-list-toggle btn btn-outline" type="button" data-text-toggle="Hide">Menu</button></span>
+      <div class="navigation main-nav js-main-nav">
+        <nav>
+  <ul class="navigation-list">
+    
+    
+      
+        
+          <li class="navigation-list-item active">
+            
+            <a href="http://localhost:4000/404.html" class="navigation-list-link"></a>
+            
+          </li>
+        
+      
+    
+      
+        
+          <li class="navigation-list-item">
+            
+            <a href="http://localhost:4000/README.html" class="navigation-list-link">SheerID Public Docs</a>
+            
+          </li>
+        
+      
+    
+      
+        
+          <li class="navigation-list-item active">
+            
+            <a href="http://localhost:4000/examples/entire-form.html" class="navigation-list-link"></a>
+            
+          </li>
+        
+      
+    
+      
+        
+          <li class="navigation-list-item active">
+            
+            <a href="http://localhost:4000/integration/trim-levels.html" class="navigation-list-link"></a>
+            
+          </li>
+        
+      
+    
+      
+        
+      
+    
+      
+        
+      
+    
+      
+        
+          <li class="navigation-list-item">
+            
+            <a href="http://localhost:4000/" class="navigation-list-link">Home</a>
+            
+          </li>
+        
+      
+    
+      
+        
+      
+    
+      
+        
+          <li class="navigation-list-item">
+            
+            <a href="http://localhost:4000/getting-started" class="navigation-list-link">Getting Started</a>
+            
+              
+              <ul class="navigation-list-child-list ">
+                
+                  
+                
+                  
+                
+                  
+                
+                  
+                
+                  
+                
+                  
+                
+                  
+                
+                  
+                
+                  
+                
+                  
+                
+                  
+                    <li class="navigation-list-item ">
+                      
+                      <a href="http://localhost:4000/getting-started/quickstart" class="navigation-list-link">SheerID Quickstart</a>
+                      
+                    </li>
+                  
+                
+                  
+                
+                  
+                
+                  
+                
+                  
+                
+                  
+                
+                  
+                
+                  
+                
+                  
+                
+                  
+                    <li class="navigation-list-item ">
+                      
+                      <a href="http://localhost:4000/getting-started/test-rules" class="navigation-list-link">Test Rules</a>
+                      
+                    </li>
+                  
+                
+                  
+                
+                  
+                
+                  
+                
+                  
+                
+                  
+                
+                  
+                
+                  
+                
+              </ul>
+            
+          </li>
+        
+      
+    
+      
+        
+      
+    
+      
+        
+      
+    
+      
+        
+      
+    
+      
+        
+      
+    
+      
+        
+      
+    
+      
+        
+      
+    
+      
+        
+      
+    
+      
+        
+      
+    
+      
+        
+          <li class="navigation-list-item active">
+            
+            <a href="http://localhost:4000/integration" class="navigation-list-link">Integration</a>
+            
+              
+              <ul class="navigation-list-child-list ">
+                
+                  
+                
+                  
+                
+                  
+                
+                  
+                
+                  
+                    <li class="navigation-list-item ">
+                      
+                      <a href="http://localhost:4000/integration/programs" class="navigation-list-link">Manage Programs</a>
+                      
+                    </li>
+                  
+                
+                  
+                
+                  
+                
+                  
+                
+                  
+                
+                  
+                
+                  
+                
+                  
+                
+                  
+                
+                  
+                
+                  
+                    <li class="navigation-list-item  active">
+                      
+                      <a href="http://localhost:4000/integration/sdk" class="navigation-list-link active">SheerID JavaScript Library</a>
+                      
+                        
+                        <ul class="navigation-list-child-list">
+                          
+                            
+                          
+                            
+                          
+                            
+                          
+                            
+                          
+                            
+                          
+                            
+                          
+                            
+                          
+                            
+                          
+                            
+                          
+                            
+                          
+                            
+                          
+                            
+                          
+                            
+                          
+                            
+                          
+                            
+                          
+                            
+                          
+                            
+                          
+                            
+                          
+                            
+                          
+                            
+                          
+                            
+                          
+                            
+                          
+                            
+                          
+                            
+                          
+                            
+                          
+                            
+                          
+                            
+                          
+                        </ul>
+                      
+                    </li>
+                  
+                
+                  
+                    <li class="navigation-list-item ">
+                      
+                      <a href="http://localhost:4000/integration/api" class="navigation-list-link">REST API</a>
+                      
+                        
+                        <ul class="navigation-list-child-list">
+                          
+                            
+                          
+                            
+                          
+                            
+                          
+                            
+                          
+                            
+                          
+                            
+                          
+                            
+                          
+                            
+                          
+                            
+                          
+                            
+                          
+                            
+                          
+                            
+                          
+                            
+                              <li class="navigation-list-item ">
+                                <a href="http://localhost:4000/integration/api/quickstart" class="navigation-list-link">API Quickstart</a>
+                              </li>
+                            
+                          
+                            
+                          
+                            
+                          
+                            
+                          
+                            
+                          
+                            
+                          
+                            
+                              <li class="navigation-list-item ">
+                                <a href="http://localhost:4000/integration/api/program-config" class="navigation-list-link">Program Config</a>
+                              </li>
+                            
+                          
+                            
+                          
+                            
+                          
+                            
+                          
+                            
+                          
+                            
+                          
+                            
+                          
+                            
+                          
+                            
+                          
+                        </ul>
+                      
+                    </li>
+                  
+                
+                  
+                
+                  
+                
+                  
+                
+                  
+                
+                  
+                
+                  
+                
+                  
+                    <li class="navigation-list-item ">
+                      
+                      <a href="http://localhost:4000/api.html" class="navigation-list-link">API Docs</a>
+                      
+                    </li>
+                  
+                
+                  
+                
+                  
+                
+                  
+                
+                  
+                
+              </ul>
+            
+          </li>
+        
+      
+    
+      
+        
+      
+    
+      
+        
+      
+    
+      
+        
+          <li class="navigation-list-item">
+            
+            <a href="http://localhost:4000/concepts" class="navigation-list-link">Concepts</a>
+            
+              
+              <ul class="navigation-list-child-list ">
+                
+                  
+                
+                  
+                
+                  
+                
+                  
+                
+                  
+                
+                  
+                
+                  
+                
+                  
+                
+                  
+                
+                  
+                
+                  
+                
+                  
+                
+                  
+                
+                  
+                    <li class="navigation-list-item ">
+                      
+                      <a href="http://localhost:4000/concepts/steps" class="navigation-list-link">Steps</a>
+                      
+                    </li>
+                  
+                
+                  
+                
+                  
+                
+                  
+                    <li class="navigation-list-item ">
+                      
+                      <a href="http://localhost:4000/concepts/flows" class="navigation-list-link">Verification Flows</a>
+                      
+                    </li>
+                  
+                
+                  
+                
+                  
+                
+                  
+                
+                  
+                
+                  
+                
+                  
+                
+                  
+                    <li class="navigation-list-item ">
+                      
+                      <a href="http://localhost:4000/concepts/segments" class="navigation-list-link">Segment Types</a>
+                      
+                    </li>
+                  
+                
+                  
+                
+                  
+                
+                  
+                
+              </ul>
+            
+          </li>
+        
+      
+    
+      
+        
+          <li class="navigation-list-item">
+            
+            <a href="http://localhost:4000/tutorials" class="navigation-list-link">Tutorials</a>
+            
+              
+              <ul class="navigation-list-child-list ">
+                
+                  
+                
+                  
+                
+                  
+                
+                  
+                
+                  
+                
+                  
+                
+                  
+                
+                  
+                    <li class="navigation-list-item ">
+                      
+                      <a href="http://localhost:4000/tutorials/custom-form" class="navigation-list-link">Create a custom form</a>
+                      
+                    </li>
+                  
+                
+                  
+                
+                  
+                
+                  
+                
+                  
+                    <li class="navigation-list-item ">
+                      
+                      <a href="http://localhost:4000/tutorials/tasks" class="navigation-list-link">Tasks</a>
+                      
+                    </li>
+                  
+                
+                  
+                
+                  
+                
+                  
+                
+                  
+                
+                  
+                
+                  
+                
+                  
+                
+                  
+                
+                  
+                
+                  
+                
+                  
+                
+                  
+                
+                  
+                
+                  
+                
+                  
+                
+              </ul>
+            
+          </li>
+        
+      
+    
+      
+        
+      
+    
+      
+        
+      
+    
+      
+        
+          <li class="navigation-list-item">
+            
+            <a href="http://localhost:4000/reporting" class="navigation-list-link">Reporting</a>
+            
+              
+              <ul class="navigation-list-child-list ">
+                
+                  
+                
+                  
+                
+                  
+                
+                  
+                
+                  
+                
+                  
+                
+                  
+                
+                  
+                
+                  
+                
+                  
+                
+                  
+                
+                  
+                
+                  
+                
+                  
+                
+                  
+                
+                  
+                
+                  
+                
+                  
+                
+                  
+                
+                  
+                
+                  
+                
+                  
+                
+                  
+                
+                  
+                
+                  
+                
+                  
+                
+                  
+                
+              </ul>
+            
+          </li>
+        
+      
+    
+      
+        
+          <li class="navigation-list-item">
+            
+            <a href="http://localhost:4000/reference" class="navigation-list-link">Reference</a>
+            
+              
+              <ul class="navigation-list-child-list ">
+                
+                  
+                
+                  
+                
+                  
+                
+                  
+                
+                  
+                
+                  
+                
+                  
+                
+                  
+                
+                  
+                
+                  
+                
+                  
+                
+                  
+                
+                  
+                
+                  
+                
+                  
+                
+                  
+                
+                  
+                
+                  
+                
+                  
+                
+                  
+                
+                  
+                
+                  
+                
+                  
+                
+                  
+                
+                  
+                
+                  
+                
+                  
+                    <li class="navigation-list-item ">
+                      
+                      <a href="http://localhost:4000/reference/glossary" class="navigation-list-link">SheerID Glossary</a>
+                      
+                    </li>
+                  
+                
+              </ul>
+            
+          </li>
+        
+      
+    
+      
+        
+      
+    
+  </ul>
+</nav>
+      </div>
+      <footer role="contentinfo" class="site-footer">
+        <p class="text-small text-grey-dk-000 mb-0">This site uses <a href="https://github.com/pmarsceill/just-the-docs">Just the Docs</a>, a documentation theme for Jekyll.</p>
+      </footer>
+    </div>
+    <div class="main-content-wrap">
+      <div class="page-header">
+        <div class="main-content">
+          
+          <div class="search js-search">
+            <div class="search-input-wrap">
+              <input type="text" class="js-search-input search-input" placeholder="Search SheerID Docs" aria-label="Search SheerID Docs" autocomplete="off">
+              <svg width="14" height="14" viewBox="0 0 28 28" xmlns="http://www.w3.org/2000/svg" class="search-icon"><title>Search</title><g fill-rule="nonzero"><path d="M17.332 20.735c-5.537 0-10-4.6-10-10.247 0-5.646 4.463-10.247 10-10.247 5.536 0 10 4.601 10 10.247s-4.464 10.247-10 10.247zm0-4c3.3 0 6-2.783 6-6.247 0-3.463-2.7-6.247-6-6.247s-6 2.784-6 6.247c0 3.464 2.7 6.247 6 6.247z"/><path d="M11.672 13.791L.192 25.271 3.02 28.1 14.5 16.62z"/></g></svg>
+            </div>
+            <div class="js-search-results search-results-wrap"></div>
+          </div>
+          
+          
+        </div>
+      </div>
+      <div class="main-content">
+        
+          
+            <nav class="breadcrumb-nav">
+              <ol class="breadcrumb-nav-list">
+                
+                  <li class="breadcrumb-nav-list-item"><a href="http://localhost:4000/integration">Integration</a></li>
+                
+                <li class="breadcrumb-nav-list-item"><span>SheerID JavaScript Library</span></li>
+              </ol>
+            </nav>
+          
+        
+        <main class="col-12 col-md-9 col-xl-8 py-md-3 pl-md-5 bd-content" role="main">
+          <h1 class="bd-title" id="content">SheerID JavaScript Library</h1>
+          <p class="bd-lead"><p>The SheerID JavaScript library gives you complete control of the look and feel of your verification programs, providing methods to customize forms and interact with our REST API. Quickly integrate gated offer programs with your site and your e-commerce workflows.</p>
+</p>
+        </main>
+        <div class="page-content">
+          <h2 class="no_toc" id="table-of-contents">Table of contents</h2>
+
+<ol id="markdown-toc">
+  <li><a href="#integration-options" id="markdown-toc-integration-options">Integration Options</a></li>
+  <li><a href="#easy" id="markdown-toc-easy">Easy</a></li>
+  <li><a href="#intermediate" id="markdown-toc-intermediate">Intermediate</a></li>
+  <li><a href="#advanced" id="markdown-toc-advanced">Advanced</a></li>
+  <li><a href="#introduction" id="markdown-toc-introduction">Introduction</a></li>
+  <li><a href="#intended-audience" id="markdown-toc-intended-audience">Intended Audience</a></li>
+  <li><a href="#customization-options" id="markdown-toc-customization-options">Customization Options</a></li>
+</ol>
+
+<h2 id="integration-options">Integration Options</h2>
+
+<p>We offer three levels of integration, depending on your need for customization.</p>
+
+<ul>
+  <li>Drop-in Form—The JavaScript Library renders the entire multi-step verification form for you in a lightbox overlay.</li>
+  <li>Custom Form—Render your own form, but interact with SheerID through the JavaScript Library, for greater control over the user experience.</li>
+  <li>REST API—Bypass the JavaScript Library and interact with a REST API directly (typically for backend integrations).</li>
+</ul>
+
+<p>Integrating SheerID verification forms into your site comes in 3 forms:</p>
+
+<p><a href="/getting-started" class="btn btn-green fs-5 mb-4 mb-md-0 mr-2">Easy</a> <a href="/integration/js-sdk" class="btn btn-blue fs-5 mr-2">Intermediate</a><a href="/integration/api" class="btn fs-5 btn-black">Advanced</a></p>
+
+<h2 id="easy">Easy</h2>
+
+<p><a href="/getting-started" class="btn btn-green fs-5 mb-4 mb-md-0 mr-2">Easy</a></p>
+
+<p><strong><code class="highlighter-rouge">MyStore.html</code></strong></p>
+<div class="language-html highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nt">&lt;script&gt;</span>
+<span class="kd">var</span> <span class="nx">myForm</span> <span class="o">=</span> <span class="k">new</span> <span class="nx">sheerID</span><span class="p">.</span><span class="nx">VerificationForm</span><span class="p">(</span>
+    <span class="nb">document</span><span class="p">.</span><span class="nx">getElementById</span><span class="p">(</span><span class="s1">'my-form'</span><span class="p">),</span>
+    <span class="s1">'5bbd127d9781852f68e14ddc'</span>
+    <span class="p">);</span>
+<span class="nt">&lt;/script&gt;</span>
+</code></pre></div></div>
+
+<h2 id="intermediate">Intermediate</h2>
+
+<p><a href="/integration/js-sdk" class="btn btn-blue fs-5 mr-2">Intermediate</a></p>
+
+<p>You can use your own forms and scripts to gather user information, and call the SheerID functions directly, and handle responses
+directly using our REST API.</p>
+
+<p><strong><code class="highlighter-rouge">MyStore.html</code></strong></p>
+<div class="language-html highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nt">&lt;script&gt;</span>
+<span class="c1">// This object is built with MyStore's forms/scripts:</span>
+<span class="kd">var</span> <span class="nx">formData</span> <span class="o">=</span> <span class="p">{</span>
+    <span class="na">firstName</span><span class="p">:</span> <span class="s1">'John'</span><span class="p">,</span>
+    <span class="na">lastName</span><span class="p">:</span> <span class="s1">'Doe'</span><span class="p">,</span>
+    <span class="na">email</span><span class="p">:</span> <span class="s1">'j@d.com'</span><span class="p">,</span>
+    <span class="na">birthDate</span><span class="p">:</span> <span class="s1">'2000-01-01'</span><span class="p">,</span>
+    <span class="na">universityId</span><span class="p">:</span> <span class="mi">231</span>
+<span class="p">}</span>
+<span class="nx">sheerid</span><span class="p">.</span><span class="nx">submitVerification</span><span class="p">(</span><span class="nx">formData</span><span class="p">)</span>
+    <span class="p">.</span><span class="nx">then</span><span class="p">(</span><span class="nx">response</span> <span class="o">=&gt;</span> <span class="p">{</span>
+        <span class="nx">MyStore</span><span class="p">.</span><span class="nx">handleResponse</span><span class="p">(</span><span class="nx">response</span><span class="p">);</span>
+    <span class="p">});</span>
+<span class="nt">&lt;/script&gt;</span>
+</code></pre></div></div>
+
+<h2 id="advanced">Advanced</h2>
+
+<p><a href="/integration/api" class="btn fs-5 btn-black">Advanced</a></p>
+
+<p>Or you can use a combination of the two.</p>
+
+<div class="language-html highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nt">&lt;div</span> <span class="na">id=</span><span class="s">"my-form"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;div</span> <span class="na">id=</span><span class="s">"my-fields"</span><span class="nt">&gt;</span>
+        <span class="nt">&lt;input</span> <span class="na">type=</span><span class="s">"text"</span> <span class="na">name=</span><span class="s">"firstName"</span> <span class="nt">/&gt;</span>
+    <span class="nt">&lt;/div&gt;</span>
+    <span class="nt">&lt;div</span> <span class="na">id=</span><span class="err"> </span><span class="s">"sheerid-fields"</span><span class="nt">&gt;</span><span class="c">&lt;!-- Built with JS --&gt;</span><span class="nt">&lt;/div&gt;</span>
+<span class="nt">&lt;/div&gt;</span>
+
+<span class="nt">&lt;script&gt;</span>
+    <span class="kd">var</span> <span class="nx">currentChoice</span> <span class="o">=</span> <span class="mi">3</span><span class="p">;</span>
+    <span class="kd">function</span> <span class="nx">onChange</span><span class="p">(</span> <span class="nx">newChoice</span> <span class="p">)</span> <span class="p">{</span>
+        <span class="nx">myStore</span><span class="p">.</span><span class="nx">handleNewChoice</span><span class="p">(</span><span class="nx">newChoice</span><span class="p">);</span>
+    <span class="p">}</span>
+
+<span class="nx">sheerid</span><span class="p">.</span><span class="nx">renderFormFieldUniversity</span><span class="p">(</span><span class="s1">'#sheerid-fields'</span><span class="p">,</span> <span class="nx">currentChoice</span><span class="p">,</span> <span class="nx">onChange</span><span class="p">);</span>
+
+<span class="nx">sheerid</span><span class="p">.</span><span class="nx">submitVerification</span><span class="p">(</span><span class="nx">formData</span><span class="p">)</span>
+    <span class="p">.</span><span class="nx">then</span><span class="p">(</span><span class="nx">response</span> <span class="o">=&gt;</span> <span class="p">{</span>
+        <span class="nx">MyStore</span><span class="p">.</span><span class="nx">handleResponse</span><span class="p">(</span><span class="nx">response</span><span class="p">);</span>
+    <span class="p">});</span>
+<span class="nt">&lt;/script&gt;</span>
+</code></pre></div></div>
+
+<h2 id="introduction">Introduction</h2>
+
+<p>The SheerID JavaScript Library helps customers of SheerID quickly integrate gated offer programs (e.g. Student Verification) with their website and e-commerce workflows.</p>
+
+<p>We offer three levels of integration, depending on your need for customization.</p>
+
+<ul>
+  <li><strong>Drop-in Form</strong> - the JavaScript Library renders the entire multi-step verification form for you in a lightbox overlay.</li>
+  <li><strong>Custom Form</strong> - you render your own form, but interact with SheerID through the JavaScript Library, for greater control over the user experience.</li>
+  <li><strong>REST API</strong> - you can bypass the JavaScript Library and interact with a REST API directly (typically for backend integrations).</li>
+</ul>
+
+<h2 id="intended-audience">Intended Audience</h2>
+
+<p>This document is for developers responsible for integrating a SheerID gated offer programs with their systems. The SheerID Javascript Library was designed for anyone with basic HTML/JavaScript skills. We support customization of look and feel through standard CSS hooks in the HTML (see <a href="./styling">Styling</a>). The <a href="http://developer.sheerid.com" target="_blank">REST API</a> is still available for more complex use cases.</p>
+
+<h2 id="customization-options">Customization Options</h2>
+
+<p>You can totally customize.</p>
+
+<ul>
+  <li>Styling</li>
+  <li>Field Layout</li>
+  <li>Internationalization</li>
+</ul>
+
+<p>Here’s an example of a new form method</p>
+
+<div class="language-js highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">new</span> 
+<span class="nb">window</span><span class="p">.</span><span class="nx">sheerId</span><span class="p">.</span><span class="nx">VerificationForm</span><span class="p">(</span><span class="nb">document</span><span class="p">.</span><span class="nx">getElementById</span><span class="p">(</span><span class="s1">'my-form'</span><span class="p">),</span> <span class="s1">'5bb2a0747f31442f3dd8e4be'</span><span class="p">);</span>
+</code></pre></div></div>
+
+<p><a href="/getting-started" class="btn btn-primary fs-5 mb-4 mb-md-0 mr-2">Customize</a> <a href="/integration/js-sdk" class="btn btn-blue fs-5 mr-2">Customize</a><a href="/integration/api" class="btn fs-5 btn-green">REST API</a></p>
+
+
+          
+          <hr>
+          <h2 class="text-delta">Table of contents</h2>
+          
+          <ul>
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+          </ul>
+          
+        </div>
+      </div>
+    </div>
+  </div>
+</html>

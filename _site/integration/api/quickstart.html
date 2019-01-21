@@ -1,0 +1,1014 @@
+<!DOCTYPE html>
+
+<html lang="en-us">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+
+  <title>API Quickstart - SheerID Docs</title>
+  <link rel="stylesheet" href="http://localhost:4000/assets/css/just-the-docs.css">
+  
+  <script type="text/javascript" src="http://localhost:4000/assets/js/vendor/lunr.min.js"></script>
+  
+  <script type="text/javascript" src="http://localhost:4000/assets/js/just-the-docs.js"></script>
+
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+
+  <div class="page-wrap">
+    <div class="side-bar">
+      <a href="http://localhost:4000" class="site-title fs-6 lh-tight">SheerID Docs</a>
+      <span class="fs-3"><button class="js-main-nav-trigger navigation-list-toggle btn btn-outline" type="button" data-text-toggle="Hide">Menu</button></span>
+      <div class="navigation main-nav js-main-nav">
+        <nav>
+  <ul class="navigation-list">
+    
+    
+      
+        
+          <li class="navigation-list-item">
+            
+            <a href="http://localhost:4000/404.html" class="navigation-list-link"></a>
+            
+          </li>
+        
+      
+    
+      
+        
+          <li class="navigation-list-item">
+            
+            <a href="http://localhost:4000/README.html" class="navigation-list-link">SheerID Public Docs</a>
+            
+          </li>
+        
+      
+    
+      
+        
+          <li class="navigation-list-item">
+            
+            <a href="http://localhost:4000/examples/entire-form.html" class="navigation-list-link"></a>
+            
+          </li>
+        
+      
+    
+      
+        
+          <li class="navigation-list-item">
+            
+            <a href="http://localhost:4000/integration/trim-levels.html" class="navigation-list-link"></a>
+            
+          </li>
+        
+      
+    
+      
+        
+      
+    
+      
+        
+      
+    
+      
+        
+          <li class="navigation-list-item">
+            
+            <a href="http://localhost:4000/" class="navigation-list-link">Home</a>
+            
+          </li>
+        
+      
+    
+      
+        
+      
+    
+      
+        
+          <li class="navigation-list-item">
+            
+            <a href="http://localhost:4000/getting-started" class="navigation-list-link">Getting Started</a>
+            
+              
+              <ul class="navigation-list-child-list ">
+                
+                  
+                
+                  
+                
+                  
+                
+                  
+                
+                  
+                
+                  
+                
+                  
+                
+                  
+                
+                  
+                
+                  
+                
+                  
+                    <li class="navigation-list-item ">
+                      
+                      <a href="http://localhost:4000/getting-started/quickstart" class="navigation-list-link">SheerID Quickstart</a>
+                      
+                    </li>
+                  
+                
+                  
+                
+                  
+                
+                  
+                
+                  
+                
+                  
+                
+                  
+                
+                  
+                
+                  
+                
+                  
+                    <li class="navigation-list-item ">
+                      
+                      <a href="http://localhost:4000/getting-started/test-rules" class="navigation-list-link">Test Rules</a>
+                      
+                    </li>
+                  
+                
+                  
+                
+                  
+                
+                  
+                
+                  
+                
+                  
+                
+                  
+                
+                  
+                
+              </ul>
+            
+          </li>
+        
+      
+    
+      
+        
+      
+    
+      
+        
+      
+    
+      
+        
+      
+    
+      
+        
+      
+    
+      
+        
+      
+    
+      
+        
+      
+    
+      
+        
+      
+    
+      
+        
+      
+    
+      
+        
+          <li class="navigation-list-item active">
+            
+            <a href="http://localhost:4000/integration" class="navigation-list-link">Integration</a>
+            
+              
+              <ul class="navigation-list-child-list ">
+                
+                  
+                
+                  
+                
+                  
+                
+                  
+                
+                  
+                    <li class="navigation-list-item ">
+                      
+                      <a href="http://localhost:4000/integration/programs" class="navigation-list-link">Manage Programs</a>
+                      
+                    </li>
+                  
+                
+                  
+                
+                  
+                
+                  
+                
+                  
+                
+                  
+                
+                  
+                
+                  
+                
+                  
+                
+                  
+                
+                  
+                    <li class="navigation-list-item ">
+                      
+                      <a href="http://localhost:4000/integration/sdk" class="navigation-list-link">SheerID JavaScript Library</a>
+                      
+                        
+                        <ul class="navigation-list-child-list">
+                          
+                            
+                          
+                            
+                          
+                            
+                          
+                            
+                          
+                            
+                          
+                            
+                          
+                            
+                          
+                            
+                          
+                            
+                          
+                            
+                          
+                            
+                          
+                            
+                          
+                            
+                          
+                            
+                          
+                            
+                          
+                            
+                          
+                            
+                          
+                            
+                          
+                            
+                          
+                            
+                          
+                            
+                          
+                            
+                          
+                            
+                          
+                            
+                          
+                            
+                          
+                            
+                          
+                            
+                          
+                        </ul>
+                      
+                    </li>
+                  
+                
+                  
+                    <li class="navigation-list-item  active">
+                      
+                      <a href="http://localhost:4000/integration/api" class="navigation-list-link">REST API</a>
+                      
+                        
+                        <ul class="navigation-list-child-list">
+                          
+                            
+                          
+                            
+                          
+                            
+                          
+                            
+                          
+                            
+                          
+                            
+                          
+                            
+                          
+                            
+                          
+                            
+                          
+                            
+                          
+                            
+                          
+                            
+                          
+                            
+                              <li class="navigation-list-item  active">
+                                <a href="http://localhost:4000/integration/api/quickstart" class="navigation-list-link active">API Quickstart</a>
+                              </li>
+                            
+                          
+                            
+                          
+                            
+                          
+                            
+                          
+                            
+                          
+                            
+                          
+                            
+                              <li class="navigation-list-item ">
+                                <a href="http://localhost:4000/integration/api/program-config" class="navigation-list-link">Program Config</a>
+                              </li>
+                            
+                          
+                            
+                          
+                            
+                          
+                            
+                          
+                            
+                          
+                            
+                          
+                            
+                          
+                            
+                          
+                            
+                          
+                        </ul>
+                      
+                    </li>
+                  
+                
+                  
+                
+                  
+                
+                  
+                
+                  
+                
+                  
+                
+                  
+                
+                  
+                    <li class="navigation-list-item ">
+                      
+                      <a href="http://localhost:4000/api.html" class="navigation-list-link">API Docs</a>
+                      
+                    </li>
+                  
+                
+                  
+                
+                  
+                
+                  
+                
+                  
+                
+              </ul>
+            
+          </li>
+        
+      
+    
+      
+        
+      
+    
+      
+        
+      
+    
+      
+        
+          <li class="navigation-list-item">
+            
+            <a href="http://localhost:4000/concepts" class="navigation-list-link">Concepts</a>
+            
+              
+              <ul class="navigation-list-child-list ">
+                
+                  
+                
+                  
+                
+                  
+                
+                  
+                
+                  
+                
+                  
+                
+                  
+                
+                  
+                
+                  
+                
+                  
+                
+                  
+                
+                  
+                
+                  
+                
+                  
+                    <li class="navigation-list-item ">
+                      
+                      <a href="http://localhost:4000/concepts/steps" class="navigation-list-link">Steps</a>
+                      
+                    </li>
+                  
+                
+                  
+                
+                  
+                
+                  
+                    <li class="navigation-list-item ">
+                      
+                      <a href="http://localhost:4000/concepts/flows" class="navigation-list-link">Verification Flows</a>
+                      
+                    </li>
+                  
+                
+                  
+                
+                  
+                
+                  
+                
+                  
+                
+                  
+                
+                  
+                
+                  
+                    <li class="navigation-list-item ">
+                      
+                      <a href="http://localhost:4000/concepts/segments" class="navigation-list-link">Segment Types</a>
+                      
+                    </li>
+                  
+                
+                  
+                
+                  
+                
+                  
+                
+              </ul>
+            
+          </li>
+        
+      
+    
+      
+        
+          <li class="navigation-list-item">
+            
+            <a href="http://localhost:4000/tutorials" class="navigation-list-link">Tutorials</a>
+            
+              
+              <ul class="navigation-list-child-list ">
+                
+                  
+                
+                  
+                
+                  
+                
+                  
+                
+                  
+                
+                  
+                
+                  
+                
+                  
+                    <li class="navigation-list-item ">
+                      
+                      <a href="http://localhost:4000/tutorials/custom-form" class="navigation-list-link">Create a custom form</a>
+                      
+                    </li>
+                  
+                
+                  
+                
+                  
+                
+                  
+                
+                  
+                    <li class="navigation-list-item ">
+                      
+                      <a href="http://localhost:4000/tutorials/tasks" class="navigation-list-link">Tasks</a>
+                      
+                    </li>
+                  
+                
+                  
+                
+                  
+                
+                  
+                
+                  
+                
+                  
+                
+                  
+                
+                  
+                
+                  
+                
+                  
+                
+                  
+                
+                  
+                
+                  
+                
+                  
+                
+                  
+                
+                  
+                
+              </ul>
+            
+          </li>
+        
+      
+    
+      
+        
+      
+    
+      
+        
+      
+    
+      
+        
+          <li class="navigation-list-item">
+            
+            <a href="http://localhost:4000/reporting" class="navigation-list-link">Reporting</a>
+            
+              
+              <ul class="navigation-list-child-list ">
+                
+                  
+                
+                  
+                
+                  
+                
+                  
+                
+                  
+                
+                  
+                
+                  
+                
+                  
+                
+                  
+                
+                  
+                
+                  
+                
+                  
+                
+                  
+                
+                  
+                
+                  
+                
+                  
+                
+                  
+                
+                  
+                
+                  
+                
+                  
+                
+                  
+                
+                  
+                
+                  
+                
+                  
+                
+                  
+                
+                  
+                
+                  
+                
+              </ul>
+            
+          </li>
+        
+      
+    
+      
+        
+          <li class="navigation-list-item">
+            
+            <a href="http://localhost:4000/reference" class="navigation-list-link">Reference</a>
+            
+              
+              <ul class="navigation-list-child-list ">
+                
+                  
+                
+                  
+                
+                  
+                
+                  
+                
+                  
+                
+                  
+                
+                  
+                
+                  
+                
+                  
+                
+                  
+                
+                  
+                
+                  
+                
+                  
+                
+                  
+                
+                  
+                
+                  
+                
+                  
+                
+                  
+                
+                  
+                
+                  
+                
+                  
+                
+                  
+                
+                  
+                
+                  
+                
+                  
+                
+                  
+                
+                  
+                    <li class="navigation-list-item ">
+                      
+                      <a href="http://localhost:4000/reference/glossary" class="navigation-list-link">SheerID Glossary</a>
+                      
+                    </li>
+                  
+                
+              </ul>
+            
+          </li>
+        
+      
+    
+      
+        
+      
+    
+  </ul>
+</nav>
+      </div>
+      <footer role="contentinfo" class="site-footer">
+        <p class="text-small text-grey-dk-000 mb-0">This site uses <a href="https://github.com/pmarsceill/just-the-docs">Just the Docs</a>, a documentation theme for Jekyll.</p>
+      </footer>
+    </div>
+    <div class="main-content-wrap">
+      <div class="page-header">
+        <div class="main-content">
+          
+          <div class="search js-search">
+            <div class="search-input-wrap">
+              <input type="text" class="js-search-input search-input" placeholder="Search SheerID Docs" aria-label="Search SheerID Docs" autocomplete="off">
+              <svg width="14" height="14" viewBox="0 0 28 28" xmlns="http://www.w3.org/2000/svg" class="search-icon"><title>Search</title><g fill-rule="nonzero"><path d="M17.332 20.735c-5.537 0-10-4.6-10-10.247 0-5.646 4.463-10.247 10-10.247 5.536 0 10 4.601 10 10.247s-4.464 10.247-10 10.247zm0-4c3.3 0 6-2.783 6-6.247 0-3.463-2.7-6.247-6-6.247s-6 2.784-6 6.247c0 3.464 2.7 6.247 6 6.247z"/><path d="M11.672 13.791L.192 25.271 3.02 28.1 14.5 16.62z"/></g></svg>
+            </div>
+            <div class="js-search-results search-results-wrap"></div>
+          </div>
+          
+          
+        </div>
+      </div>
+      <div class="main-content">
+        
+          
+            <nav class="breadcrumb-nav">
+              <ol class="breadcrumb-nav-list">
+                
+                  <li class="breadcrumb-nav-list-item"><a href="http://localhost:4000/integration">Integration</a></li>
+                  <li class="breadcrumb-nav-list-item"><a href="http://localhost:4000/integration/api">REST API</a></li>
+                
+                <li class="breadcrumb-nav-list-item"><span>API Quickstart</span></li>
+              </ol>
+            </nav>
+          
+        
+        <main class="col-12 col-md-9 col-xl-8 py-md-3 pl-md-5 bd-content" role="main">
+          <h1 class="bd-title" id="content">API Quickstart</h1>
+          <p class="bd-lead">
+</p>
+        </main>
+        <div class="page-content">
+          <h1 id="api-quickstart">API Quickstart</h1>
+
+<p>[<em>Make sure you have your program ID before starting</em>]</p>
+
+<p>A Program can be created at <a href="https://trial-preview.sheerid.com" target="_blank">trial-preview.sheerid.com</a></p>
+
+<p>You can find the <code class="highlighter-rouge">programId</code> on your program’s install page.
+<img src="/assets/img/programid.png" alt="SheerID Program ID in Self-Service tool" /></p>
+
+<h2 id="retrive-theme-optional">Retrive Theme (Optional)</h2>
+
+<p>If you would like to use the CSS and messaging that was configured in the self-service tool, then you will need to first fetch the 
+<a href="docs/rest/programTheme.md">program theme</a>. To do this, make a <code class="highlighter-rouge">GET</code> request to <code class="highlighter-rouge">https://preview.sheerid.com/rest/v2/program/{programId}/theme</code>. 
+See the <a href="docs/rest/programTheme.md">program theme docs</a> for more information about what is contained in that payload.</p>
+
+<div class="language-json highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="p">{</span><span class="w">
+    </span><span class="s2">"intl"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+        </span><span class="s2">"locale"</span><span class="p">:</span><span class="w"> </span><span class="s2">"en-US"</span><span class="p">,</span><span class="w">
+        </span><span class="s2">"messages"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+            </span><span class="s2">"errorId"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+                </span><span class="s2">"internalServerError"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Internal server error"</span><span class="p">,</span><span class="w">
+                </span><span class="s2">"noProgram"</span><span class="p">:</span><span class="w"> </span><span class="s2">"No program found"</span><span class="p">,</span><span class="w">
+                </span><span class="s2">"noVerification"</span><span class="p">:</span><span class="w"> </span><span class="s2">"No verification found"</span><span class="p">,</span><span class="w">
+                </span><span class="s2">"invalidProgram"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Invalid program"</span><span class="p">,</span><span class="w">
+                </span><span class="s2">"invalidStep"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Invalid step"</span><span class="p">,</span><span class="w">
+                </span><span class="s2">"invalidOrganizationId"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Invalid organization"</span><span class="p">,</span><span class="w">
+                </span><span class="s2">"invalidFirstName"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Invalid first name"</span><span class="p">,</span><span class="w">
+                </span><span class="s2">"invalidLastName"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Invalid last name"</span><span class="p">,</span><span class="w">
+                </span><span class="s2">"invalidBirthDate"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Invalid birthdate"</span><span class="p">,</span><span class="w">
+                </span><span class="s2">"invalidEmail"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Invalid email"</span><span class="p">,</span><span class="w">
+                </span><span class="s2">"underagePerson"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Underage"</span><span class="p">,</span><span class="w">
+                </span><span class="s2">"outsideAgePerson"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Age outside allowed range"</span><span class="p">,</span><span class="w">
+                </span><span class="s2">"futureBirthDate"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Future birthdate"</span><span class="p">,</span><span class="w">
+                </span><span class="s2">"unsupportedDocMimeType"</span><span class="p">:</span><span class="w"> </span><span class="s2">"One or more files is an unsupported format"</span><span class="p">,</span><span class="w">
+                </span><span class="s2">"invalidFileSizeEmpty"</span><span class="p">:</span><span class="w"> </span><span class="s2">"One or more files is empty"</span><span class="p">,</span><span class="w">
+                </span><span class="s2">"invalidFileSizeMax"</span><span class="p">:</span><span class="w"> </span><span class="s2">"One or more files is too large (max: 10MB)"</span><span class="p">,</span><span class="w">
+                </span><span class="s2">"invalidNumberOfFiles"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Maximum number of files exceeded (max: 5)"</span><span class="p">,</span><span class="w">
+                </span><span class="s2">"invalidDocUploadToken"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Provided document upload token is not valid"</span><span class="p">,</span><span class="w">
+                </span><span class="s2">"verificationLimitExceeded"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Verification limit exceeded"</span><span class="p">,</span><span class="w">
+                </span><span class="s2">"docReviewLimitExceeded"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Document review limit exceeded"</span><span class="p">,</span><span class="w">
+                </span><span class="s2">"maxMetadataValuesExceeded"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Maximum number of metadata values exceeded"</span><span class="p">,</span><span class="w">
+                </span><span class="s2">"maxMetadataLengthExceeded"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Maximum length of metadata value exceeded"</span><span class="p">,</span><span class="w">
+                </span><span class="s2">"unknownError"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Unknown Error"</span><span class="p">,</span><span class="w">
+                </span><span class="s2">"invalidRequest"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Invalid request"</span><span class="w">
+            </span><span class="p">},</span><span class="w">
+            </span><span class="s2">"dateTime"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+                </span><span class="s2">"january"</span><span class="p">:</span><span class="w"> </span><span class="s2">"January"</span><span class="p">,</span><span class="w">
+                </span><span class="s2">"february"</span><span class="p">:</span><span class="w"> </span><span class="s2">"February"</span><span class="p">,</span><span class="w">
+                </span><span class="s2">"march"</span><span class="p">:</span><span class="w"> </span><span class="s2">"March"</span><span class="p">,</span><span class="w">
+                </span><span class="s2">"april"</span><span class="p">:</span><span class="w"> </span><span class="s2">"April"</span><span class="p">,</span><span class="w">
+                </span><span class="s2">"may"</span><span class="p">:</span><span class="w"> </span><span class="s2">"May"</span><span class="p">,</span><span class="w">
+                </span><span class="s2">"june"</span><span class="p">:</span><span class="w"> </span><span class="s2">"June"</span><span class="p">,</span><span class="w">
+                </span><span class="s2">"july"</span><span class="p">:</span><span class="w"> </span><span class="s2">"July"</span><span class="p">,</span><span class="w">
+                </span><span class="s2">"august"</span><span class="p">:</span><span class="w"> </span><span class="s2">"August"</span><span class="p">,</span><span class="w">
+                </span><span class="s2">"september"</span><span class="p">:</span><span class="w"> </span><span class="s2">"September"</span><span class="p">,</span><span class="w">
+                </span><span class="s2">"october"</span><span class="p">:</span><span class="w"> </span><span class="s2">"October"</span><span class="p">,</span><span class="w">
+                </span><span class="s2">"november"</span><span class="p">:</span><span class="w"> </span><span class="s2">"November"</span><span class="p">,</span><span class="w">
+                </span><span class="s2">"december"</span><span class="p">:</span><span class="w"> </span><span class="s2">"December"</span><span class="p">,</span><span class="w">
+                </span><span class="s2">"month"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Month"</span><span class="p">,</span><span class="w">
+                </span><span class="s2">"day"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Day"</span><span class="p">,</span><span class="w">
+                </span><span class="s2">"year"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Year"</span><span class="w">
+            </span><span class="p">},</span><span class="w">
+            </span><span class="s2">"schoolName"</span><span class="p">:</span><span class="w"> </span><span class="s2">"School Name"</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"error"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Error"</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"sheerIdFaqs"</span><span class="p">:</span><span class="w"> </span><span class="s2">"SheerID FAQs"</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"poweredBy"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Verification services powered by SheerID"</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"personalInformation"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Personal Information"</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"birthDate"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Birth Date"</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"school"</span><span class="p">:</span><span class="w"> </span><span class="s2">"School"</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"verifyAndContinue"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Verify and continue"</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"studentInfoShared"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Information entered into this web form will be used for verification purposes. The information will be shared with Students.com."</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"requiredFields"</span><span class="p">:</span><span class="w"> </span><span class="s2">"All fields are required"</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"step"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+                </span><span class="s2">"collectStudentPersonalInfo"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+                    </span><span class="s2">"subtitle"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Confirm your eligibility by simply completing the form below."</span><span class="p">,</span><span class="w">
+                    </span><span class="s2">"title"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Verify your details"</span><span class="p">,</span><span class="w">
+                    </span><span class="s2">"formTitle"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Personal information"</span><span class="w">
+                </span><span class="p">},</span><span class="w">
+                </span><span class="s2">"docUpload"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+                    </span><span class="s2">"acceptedTypes"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Acceptable file types: png, gif, jpg, bmp, pdf"</span><span class="p">,</span><span class="w">
+                    </span><span class="s2">"title"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Documentation Needed"</span><span class="p">,</span><span class="w">
+                    </span><span class="s2">"subtitle"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Please upload a document that clearly shows your first name, last name, valid dates and/or status."</span><span class="p">,</span><span class="w">
+                    </span><span class="s2">"footer"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Please omit, cover up or black out any sensitive information such as Social Security Number, bank information, etc."</span><span class="p">,</span><span class="w">
+                    </span><span class="s2">"submitButtonLabel"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Continue"</span><span class="w">
+                </span><span class="p">},</span><span class="w">
+                </span><span class="s2">"pending"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+                    </span><span class="s2">"subtitle"</span><span class="p">:</span><span class="w"> </span><span class="s2">"The review process has now started. You will be contacted via email in less than 20 minutes with details regarding your verification request."</span><span class="p">,</span><span class="w">
+                    </span><span class="s2">"title"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Under Review"</span><span class="p">,</span><span class="w">
+                    </span><span class="s2">"subtitle2"</span><span class="p">:</span><span class="w"> </span><span class="s2">"NOTE: If you do not receive an email within the time shown above, you may want to check your junk/spam folder for the message."</span><span class="w">
+                </span><span class="p">},</span><span class="w">
+                </span><span class="s2">"success"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+                    </span><span class="s2">"title"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Congratulations!"</span><span class="p">,</span><span class="w">
+                    </span><span class="s2">"subtitle"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Your status has been verified."</span><span class="w">
+                </span><span class="p">}</span><span class="w">
+            </span><span class="p">}</span><span class="w">
+        </span><span class="p">}</span><span class="w">
+    </span><span class="p">},</span><span class="w">
+    </span><span class="s2">"customCss"</span><span class="p">:</span><span class="w"> </span><span class="s2">"/* </span><span class="se">\n\n</span><span class="s2">**********************</span><span class="se">\n</span><span class="s2">ATTENTION - This configuration is written by sheerid-web-apps, my.sheerid.com</span><span class="se">\n</span><span class="s2">**********************</span><span class="se">\n\n</span><span class="s2"> */</span><span class="se">\n</span><span class="s2">        /* The following code is customer provided */</span><span class="se">\n</span><span class="s2">        </span><span class="se">\n</span><span class="s2">        .sid-text-input {</span><span class="se">\n</span><span class="s2"> background: pink; </span><span class="se">\n</span><span class="s2">}</span><span class="se">\n\n</span><span class="s2">        </span><span class="se">\n</span><span class="s2">        "</span><span class="w">
+</span><span class="p">}</span><span class="w">
+</span></code></pre></div></div>
+
+<h2 id="retrieve-verification-segment">Retrieve Verification Segment</h2>
+
+<p>Now we need to begin a verification. This will retrieve what kind of segment you will be verifying against (Student, Active Military, Inactive Military, Teacher, etc.).</p>
+
+<p>To retrieve the initial step for your <a href="docs/flows.md">flow</a>, make the following <code class="highlighter-rouge">POST</code> request:</p>
+
+<p>URL: <code class="highlighter-rouge">https://preview.sheerid.com/rest/v2/verification</code></p>
+
+<p>Request Body:</p>
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>{
+    "programId": "YOUR PROGRAM ID HERE"
+}
+</code></pre></div></div>
+<p>Response:</p>
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>{
+    "verificationId": "111111111111111111111111", // Verification ID that should be used for all future calls
+    "currentStep": "collectStudentPersonalInfo", // The step in the verification flow the current verification is on
+    "submissionUrl": "https://preview.sheerid.com/rest/v2/verification/111111111111111111111111/step/collectStudentPersonalInfo" // The URL to hit for the current step
+}
+</code></pre></div></div>
+
+<p>At this point a verification has begun and can be referenced with the <code class="highlighter-rouge">verificationId</code>, in the example case <code class="highlighter-rouge">111111111111111111111111</code>. This ID will be used for all
+future interactions with this verification ID.</p>
+
+<h2 id="verify-a-user">Verify a User</h2>
+
+<p>Now that we have our step (in our demo case we are verifying a student, so our step is <code class="highlighter-rouge">collectStudentPersonalInfo</code>), we can submit a verification subject to verify. 
+We will be submitting a student for verification, so we will need to fill out this structure:</p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>{
+    "firstName": "",
+    "lastName": "",
+    "email": "",
+    "birthDate": "YYYY-MM-DD",
+    "universityId": 0
+}
+</code></pre></div></div>
+<p><a href="docs/generated/js-lib/modules/_types_.html" target="_blank"><em>Schemas for all verification subjects can be found here</em></a></p>
+
+<p>Once all data has been collected, make a <code class="highlighter-rouge">POST</code> call to the URL collected in the previous step’s <code class="highlighter-rouge">submissionUrl</code> response with the data, e.g.</p>
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>{
+    "firstName": "First",
+    "lastName": "Last",
+    "email": "demo@sheerid.com",
+    "birthDate": "1980-01-01",
+    "universityId": 1
+}
+</code></pre></div></div>
+
+<p>This example will cause an instant success response because it uses an even birth year. To see comprehensive testing rules, see the <a href="docs/testRules.md">test rules</a> 
+documentations.</p>
+
+<h3 id="success">Success</h3>
+
+<p>If the verification was successful, then you will receive a response like this:</p>
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>{
+    "verificationId": "111111111111111111111111", // Verification ID that should be used for all future calls
+    "currentStep": "success", // The step in the verification flow the current verification is on
+    "rewardCode": "REWARD" // The reward code that was configured in the self service tool
+}
+</code></pre></div></div>
+
+<p>After providing the <code class="highlighter-rouge">rewardCode</code> to your user to be used in your system, you’re done!</p>
+
+<h3 id="document-review">Document Review</h3>
+
+<p>If the verification was unsuccessful, then you will need to collect document(s) that prove the user is part of the verification segment to be provided to SheerID 
+for review. The document review response will be returned after submitting the personal info of the user if the user could not be verified instantly, and will look 
+something like this:</p>
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>{
+    "verificationId": "111111111111111111111111", // Verification ID that should be used for all future calls
+    "currentStep": "docUpload", // The step in the verification flow the current verification is on
+    "submissionUrl": "https://preview.sheerid.com/rest/v2/verification/111111111111111111111111/step/docUpload/1234" // The URL to hit for the current step
+}
+</code></pre></div></div>
+
+<p>After collecting the documents, they should be submitted to SheerID by making a <code class="highlighter-rouge">POST</code> request to the <code class="highlighter-rouge">submissionUrl</code> provided in the doc upload response. This 
+request must use the <code class="highlighter-rouge">multipart/form-data</code> <code class="highlighter-rouge">Content-Type</code> header, and should specify each file with a key beginning with <code class="highlighter-rouge">file</code> e.g.</p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>file1=first file...
+file2=second file...
+file3=third file...
+</code></pre></div></div>
+
+<p>Once all files have been submitted, you will receive a <code class="highlighter-rouge">pending</code> response.</p>
+
+<h3 id="pending">Pending</h3>
+
+<p>If documents have been successfully uploaded to SheerID for review, then you will receive a response that looks like this:</p>
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>{
+    "verificationId": "111111111111111111111111", // Verification ID that should be used for all future calls
+    "currentStep": "pending", // The step in the verification flow the current verification is on
+    "statusUrl": "https://preview.sheerid.com/rest/v2/verification/111111111111111111111111" // The URL to poll for current status
+}
+</code></pre></div></div>
+
+<p>The <code class="highlighter-rouge">statusUrl</code> is the URL used to retrieve the current status of the verification. This endpoint can be polled to watch for changes to the verification state. If 
+a document review is completeled and marked successful (the document proved the user was associated with the segment), then you will receive the <code class="highlighter-rouge">success</code> response. 
+If the document review was marked rejected (the document did not prove the user was associated with the segment), the you will receive the <code class="highlighter-rouge">docUpload</code> response so 
+the user has a change to upload different documentation. The user has a limited number of times they can perform this operation. If the document review is still in 
+progress, you will continue to get the <code class="highlighter-rouge">pending</code> response.</p>
+
+<h3 id="getting-current-status">Getting Current Status</h3>
+
+<p>The current status of a verification can be retrieved at any time by making a <code class="highlighter-rouge">GET</code> request to <code class="highlighter-rouge">https://preview.sheerid.com/rest/v2/verification/{verificationId}</code>. The 
+response from this endpoint will match the responses you get a various points through the flow (<code class="highlighter-rouge">success</code>, <code class="highlighter-rouge">docUpload</code>, <code class="highlighter-rouge">pending</code>, <code class="highlighter-rouge">error</code>, etc.). This endpoint can be 
+used to continue a verificaiton that was halted at any point.</p>
+
+<h3 id="errors">Errors</h3>
+
+<p>To see detailed descriptions of errors that could occur during the verification flow, see the <a href="docs/rest/errors.md">errors documentation</a>.</p>
+
+
+          
+        </div>
+      </div>
+    </div>
+  </div>
+</html>

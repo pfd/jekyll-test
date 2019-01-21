@@ -1,0 +1,1021 @@
+<!DOCTYPE html>
+
+<html lang="en-us">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+
+  <title>REST API - SheerID Docs</title>
+  <link rel="stylesheet" href="http://localhost:4000/assets/css/just-the-docs.css">
+  
+  <script type="text/javascript" src="http://localhost:4000/assets/js/vendor/lunr.min.js"></script>
+  
+  <script type="text/javascript" src="http://localhost:4000/assets/js/just-the-docs.js"></script>
+
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+
+  <div class="page-wrap">
+    <div class="side-bar">
+      <a href="http://localhost:4000" class="site-title fs-6 lh-tight">SheerID Docs</a>
+      <span class="fs-3"><button class="js-main-nav-trigger navigation-list-toggle btn btn-outline" type="button" data-text-toggle="Hide">Menu</button></span>
+      <div class="navigation main-nav js-main-nav">
+        <nav>
+  <ul class="navigation-list">
+    
+    
+      
+        
+          <li class="navigation-list-item active">
+            
+            <a href="http://localhost:4000/404.html" class="navigation-list-link"></a>
+            
+          </li>
+        
+      
+    
+      
+        
+          <li class="navigation-list-item">
+            
+            <a href="http://localhost:4000/README.html" class="navigation-list-link">SheerID Public Docs</a>
+            
+          </li>
+        
+      
+    
+      
+        
+          <li class="navigation-list-item active">
+            
+            <a href="http://localhost:4000/examples/entire-form.html" class="navigation-list-link"></a>
+            
+          </li>
+        
+      
+    
+      
+        
+          <li class="navigation-list-item active">
+            
+            <a href="http://localhost:4000/integration/trim-levels.html" class="navigation-list-link"></a>
+            
+          </li>
+        
+      
+    
+      
+        
+      
+    
+      
+        
+      
+    
+      
+        
+          <li class="navigation-list-item">
+            
+            <a href="http://localhost:4000/" class="navigation-list-link">Home</a>
+            
+          </li>
+        
+      
+    
+      
+        
+      
+    
+      
+        
+          <li class="navigation-list-item">
+            
+            <a href="http://localhost:4000/getting-started" class="navigation-list-link">Getting Started</a>
+            
+              
+              <ul class="navigation-list-child-list ">
+                
+                  
+                
+                  
+                
+                  
+                
+                  
+                
+                  
+                
+                  
+                
+                  
+                
+                  
+                
+                  
+                
+                  
+                
+                  
+                    <li class="navigation-list-item ">
+                      
+                      <a href="http://localhost:4000/getting-started/quickstart" class="navigation-list-link">SheerID Quickstart</a>
+                      
+                    </li>
+                  
+                
+                  
+                
+                  
+                
+                  
+                
+                  
+                
+                  
+                
+                  
+                
+                  
+                
+                  
+                
+                  
+                    <li class="navigation-list-item ">
+                      
+                      <a href="http://localhost:4000/getting-started/test-rules" class="navigation-list-link">Test Rules</a>
+                      
+                    </li>
+                  
+                
+                  
+                
+                  
+                
+                  
+                
+                  
+                
+                  
+                
+                  
+                
+                  
+                
+              </ul>
+            
+          </li>
+        
+      
+    
+      
+        
+      
+    
+      
+        
+      
+    
+      
+        
+      
+    
+      
+        
+      
+    
+      
+        
+      
+    
+      
+        
+      
+    
+      
+        
+      
+    
+      
+        
+      
+    
+      
+        
+          <li class="navigation-list-item active">
+            
+            <a href="http://localhost:4000/integration" class="navigation-list-link">Integration</a>
+            
+              
+              <ul class="navigation-list-child-list ">
+                
+                  
+                
+                  
+                
+                  
+                
+                  
+                
+                  
+                    <li class="navigation-list-item ">
+                      
+                      <a href="http://localhost:4000/integration/programs" class="navigation-list-link">Manage Programs</a>
+                      
+                    </li>
+                  
+                
+                  
+                
+                  
+                
+                  
+                
+                  
+                
+                  
+                
+                  
+                
+                  
+                
+                  
+                
+                  
+                
+                  
+                    <li class="navigation-list-item ">
+                      
+                      <a href="http://localhost:4000/integration/sdk" class="navigation-list-link">SheerID JavaScript Library</a>
+                      
+                        
+                        <ul class="navigation-list-child-list">
+                          
+                            
+                          
+                            
+                          
+                            
+                          
+                            
+                          
+                            
+                          
+                            
+                          
+                            
+                          
+                            
+                          
+                            
+                          
+                            
+                          
+                            
+                          
+                            
+                          
+                            
+                          
+                            
+                          
+                            
+                          
+                            
+                          
+                            
+                          
+                            
+                          
+                            
+                          
+                            
+                          
+                            
+                          
+                            
+                          
+                            
+                          
+                            
+                          
+                            
+                          
+                            
+                          
+                            
+                          
+                        </ul>
+                      
+                    </li>
+                  
+                
+                  
+                    <li class="navigation-list-item  active">
+                      
+                      <a href="http://localhost:4000/integration/api" class="navigation-list-link active">REST API</a>
+                      
+                        
+                        <ul class="navigation-list-child-list">
+                          
+                            
+                          
+                            
+                          
+                            
+                          
+                            
+                          
+                            
+                          
+                            
+                          
+                            
+                          
+                            
+                          
+                            
+                          
+                            
+                          
+                            
+                          
+                            
+                          
+                            
+                              <li class="navigation-list-item ">
+                                <a href="http://localhost:4000/integration/api/quickstart" class="navigation-list-link">API Quickstart</a>
+                              </li>
+                            
+                          
+                            
+                          
+                            
+                          
+                            
+                          
+                            
+                          
+                            
+                          
+                            
+                              <li class="navigation-list-item ">
+                                <a href="http://localhost:4000/integration/api/program-config" class="navigation-list-link">Program Config</a>
+                              </li>
+                            
+                          
+                            
+                          
+                            
+                          
+                            
+                          
+                            
+                          
+                            
+                          
+                            
+                          
+                            
+                          
+                            
+                          
+                        </ul>
+                      
+                    </li>
+                  
+                
+                  
+                
+                  
+                
+                  
+                
+                  
+                
+                  
+                
+                  
+                
+                  
+                    <li class="navigation-list-item ">
+                      
+                      <a href="http://localhost:4000/api.html" class="navigation-list-link">API Docs</a>
+                      
+                    </li>
+                  
+                
+                  
+                
+                  
+                
+                  
+                
+                  
+                
+              </ul>
+            
+          </li>
+        
+      
+    
+      
+        
+      
+    
+      
+        
+      
+    
+      
+        
+          <li class="navigation-list-item">
+            
+            <a href="http://localhost:4000/concepts" class="navigation-list-link">Concepts</a>
+            
+              
+              <ul class="navigation-list-child-list ">
+                
+                  
+                
+                  
+                
+                  
+                
+                  
+                
+                  
+                
+                  
+                
+                  
+                
+                  
+                
+                  
+                
+                  
+                
+                  
+                
+                  
+                
+                  
+                
+                  
+                    <li class="navigation-list-item ">
+                      
+                      <a href="http://localhost:4000/concepts/steps" class="navigation-list-link">Steps</a>
+                      
+                    </li>
+                  
+                
+                  
+                
+                  
+                
+                  
+                    <li class="navigation-list-item ">
+                      
+                      <a href="http://localhost:4000/concepts/flows" class="navigation-list-link">Verification Flows</a>
+                      
+                    </li>
+                  
+                
+                  
+                
+                  
+                
+                  
+                
+                  
+                
+                  
+                
+                  
+                
+                  
+                    <li class="navigation-list-item ">
+                      
+                      <a href="http://localhost:4000/concepts/segments" class="navigation-list-link">Segment Types</a>
+                      
+                    </li>
+                  
+                
+                  
+                
+                  
+                
+                  
+                
+              </ul>
+            
+          </li>
+        
+      
+    
+      
+        
+          <li class="navigation-list-item">
+            
+            <a href="http://localhost:4000/tutorials" class="navigation-list-link">Tutorials</a>
+            
+              
+              <ul class="navigation-list-child-list ">
+                
+                  
+                
+                  
+                
+                  
+                
+                  
+                
+                  
+                
+                  
+                
+                  
+                
+                  
+                    <li class="navigation-list-item ">
+                      
+                      <a href="http://localhost:4000/tutorials/custom-form" class="navigation-list-link">Create a custom form</a>
+                      
+                    </li>
+                  
+                
+                  
+                
+                  
+                
+                  
+                
+                  
+                    <li class="navigation-list-item ">
+                      
+                      <a href="http://localhost:4000/tutorials/tasks" class="navigation-list-link">Tasks</a>
+                      
+                    </li>
+                  
+                
+                  
+                
+                  
+                
+                  
+                
+                  
+                
+                  
+                
+                  
+                
+                  
+                
+                  
+                
+                  
+                
+                  
+                
+                  
+                
+                  
+                
+                  
+                
+                  
+                
+                  
+                
+              </ul>
+            
+          </li>
+        
+      
+    
+      
+        
+      
+    
+      
+        
+      
+    
+      
+        
+          <li class="navigation-list-item">
+            
+            <a href="http://localhost:4000/reporting" class="navigation-list-link">Reporting</a>
+            
+              
+              <ul class="navigation-list-child-list ">
+                
+                  
+                
+                  
+                
+                  
+                
+                  
+                
+                  
+                
+                  
+                
+                  
+                
+                  
+                
+                  
+                
+                  
+                
+                  
+                
+                  
+                
+                  
+                
+                  
+                
+                  
+                
+                  
+                
+                  
+                
+                  
+                
+                  
+                
+                  
+                
+                  
+                
+                  
+                
+                  
+                
+                  
+                
+                  
+                
+                  
+                
+                  
+                
+              </ul>
+            
+          </li>
+        
+      
+    
+      
+        
+          <li class="navigation-list-item">
+            
+            <a href="http://localhost:4000/reference" class="navigation-list-link">Reference</a>
+            
+              
+              <ul class="navigation-list-child-list ">
+                
+                  
+                
+                  
+                
+                  
+                
+                  
+                
+                  
+                
+                  
+                
+                  
+                
+                  
+                
+                  
+                
+                  
+                
+                  
+                
+                  
+                
+                  
+                
+                  
+                
+                  
+                
+                  
+                
+                  
+                
+                  
+                
+                  
+                
+                  
+                
+                  
+                
+                  
+                
+                  
+                
+                  
+                
+                  
+                
+                  
+                
+                  
+                    <li class="navigation-list-item ">
+                      
+                      <a href="http://localhost:4000/reference/glossary" class="navigation-list-link">SheerID Glossary</a>
+                      
+                    </li>
+                  
+                
+              </ul>
+            
+          </li>
+        
+      
+    
+      
+        
+      
+    
+  </ul>
+</nav>
+      </div>
+      <footer role="contentinfo" class="site-footer">
+        <p class="text-small text-grey-dk-000 mb-0">This site uses <a href="https://github.com/pmarsceill/just-the-docs">Just the Docs</a>, a documentation theme for Jekyll.</p>
+      </footer>
+    </div>
+    <div class="main-content-wrap">
+      <div class="page-header">
+        <div class="main-content">
+          
+          <div class="search js-search">
+            <div class="search-input-wrap">
+              <input type="text" class="js-search-input search-input" placeholder="Search SheerID Docs" aria-label="Search SheerID Docs" autocomplete="off">
+              <svg width="14" height="14" viewBox="0 0 28 28" xmlns="http://www.w3.org/2000/svg" class="search-icon"><title>Search</title><g fill-rule="nonzero"><path d="M17.332 20.735c-5.537 0-10-4.6-10-10.247 0-5.646 4.463-10.247 10-10.247 5.536 0 10 4.601 10 10.247s-4.464 10.247-10 10.247zm0-4c3.3 0 6-2.783 6-6.247 0-3.463-2.7-6.247-6-6.247s-6 2.784-6 6.247c0 3.464 2.7 6.247 6 6.247z"/><path d="M11.672 13.791L.192 25.271 3.02 28.1 14.5 16.62z"/></g></svg>
+            </div>
+            <div class="js-search-results search-results-wrap"></div>
+          </div>
+          
+          
+        </div>
+      </div>
+      <div class="main-content">
+        
+          
+            <nav class="breadcrumb-nav">
+              <ol class="breadcrumb-nav-list">
+                
+                  <li class="breadcrumb-nav-list-item"><a href="http://localhost:4000/integration">Integration</a></li>
+                
+                <li class="breadcrumb-nav-list-item"><span>REST API</span></li>
+              </ol>
+            </nav>
+          
+        
+        <main class="col-12 col-md-9 col-xl-8 py-md-3 pl-md-5 bd-content" role="main">
+          <h1 class="bd-title" id="content">REST API</h1>
+          <p class="bd-lead">
+</p>
+        </main>
+        <div class="page-content">
+          <h1 class="no_toc" id="api-overview">API Overview</h1>
+
+<h2 class="no_toc text-delta" id="table-of-contents">Table of contents</h2>
+
+<ol id="markdown-toc">
+  <li><a href="#base-url" id="markdown-toc-base-url">Base URL</a></li>
+  <li><a href="#authentication" id="markdown-toc-authentication">Authentication</a></li>
+  <li><a href="#errors" id="markdown-toc-errors">Errors</a>    <ol>
+      <li><a href="#recoverable-errors" id="markdown-toc-recoverable-errors">Recoverable Errors</a>        <ol>
+          <li><a href="#messages" id="markdown-toc-messages">Messages</a></li>
+          <li><a href="#example" id="markdown-toc-example">Example</a></li>
+        </ol>
+      </li>
+      <li><a href="#non-recoverable-errors" id="markdown-toc-non-recoverable-errors">Non Recoverable Errors</a>        <ol>
+          <li><a href="#messages-1" id="markdown-toc-messages-1">Messages</a></li>
+          <li><a href="#example-1" id="markdown-toc-example-1">Example</a></li>
+        </ol>
+      </li>
+    </ol>
+  </li>
+</ol>
+
+<p>The SheerID API is organized around REST.</p>
+
+<h2 id="base-url">Base URL</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>https://preview.sheerid.com/rest/v2/
+</code></pre></div></div>
+
+<h2 id="authentication">Authentication</h2>
+
+<p>Requests use bearer auth.</p>
+
+<div class="language-http highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nf">GET</span> <span class="nn">/rest/v2/info</span> <span class="k">HTTP</span><span class="o">/</span><span class="m">1.1</span>
+<span class="na">Content-Type</span><span class="p">:</span> <span class="s">application/json</span>
+<span class="na">Authorization</span><span class="p">:</span> <span class="s">Bearer &lt;YOUR_ACCESS_TOKEN&gt;</span>
+</code></pre></div></div>
+
+<p>Get your access token from the SheerID web application under <em>Settings</em> »» <em>Access Tokens</em>.</p>
+
+<h2 id="errors">Errors</h2>
+
+<p>Any response while interacting with the API could be an error response. There are two types of possible erros: one that can be recovered from and one that is fatal.</p>
+
+<h3 id="recoverable-errors">Recoverable Errors</h3>
+
+<p>A recoverable error will include the step the verification was on before the error occurred. So if I was attempting to submit a student subject for the <code class="highlighter-rouge">collectStudentPersonalInfo</code> step, I could receive this response:</p>
+<div class="language-json highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="p">{</span><span class="w">
+    </span><span class="s2">"verificationId"</span><span class="p">:</span><span class="w"> </span><span class="s2">"111111111111111111111111"</span><span class="p">,</span><span class="w"> </span><span class="err">//</span><span class="w"> </span><span class="err">Verification</span><span class="w"> </span><span class="err">ID</span><span class="w"> </span><span class="err">that</span><span class="w"> </span><span class="err">should</span><span class="w"> </span><span class="err">be</span><span class="w"> </span><span class="err">used</span><span class="w"> </span><span class="err">for</span><span class="w"> </span><span class="err">all</span><span class="w"> </span><span class="err">future</span><span class="w"> </span><span class="err">calls</span><span class="w">
+    </span><span class="s2">"programConfig"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+        </span><span class="err">//</span><span class="w"> </span><span class="err">See</span><span class="w"> </span><span class="err">program</span><span class="w"> </span><span class="err">config</span><span class="w"> </span><span class="err">docs</span><span class="w"> </span><span class="err">for</span><span class="w"> </span><span class="err">description</span><span class="w"> </span><span class="err">of</span><span class="w"> </span><span class="err">contents</span><span class="w">
+    </span><span class="p">},</span><span class="w">
+    </span><span class="s2">"currentStep"</span><span class="p">:</span><span class="w"> </span><span class="s2">"collectStudentPersonalInfo"</span><span class="p">,</span><span class="w"> </span><span class="err">//</span><span class="w"> </span><span class="err">The</span><span class="w"> </span><span class="err">step</span><span class="w"> </span><span class="err">in</span><span class="w"> </span><span class="err">the</span><span class="w"> </span><span class="err">verification</span><span class="w"> </span><span class="err">flow</span><span class="w"> </span><span class="err">the</span><span class="w"> </span><span class="err">current</span><span class="w"> </span><span class="err">verification</span><span class="w"> </span><span class="err">is</span><span class="w"> </span><span class="err">on</span><span class="w">
+    </span><span class="s2">"errorIds"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
+        </span><span class="err">//</span><span class="w"> </span><span class="err">The</span><span class="w"> </span><span class="err">errors</span><span class="w"> </span><span class="err">that</span><span class="w"> </span><span class="err">occurred</span><span class="w"> </span><span class="err">when</span><span class="w"> </span><span class="err">attempting</span><span class="w"> </span><span class="err">the</span><span class="w"> </span><span class="err">step</span><span class="w">
+    </span><span class="p">]</span><span class="w">
+</span><span class="p">}</span><span class="w">
+</span></code></pre></div></div>
+
+<p>The <code class="highlighter-rouge">errorIds</code> will indicate what went wrong, but since the <code class="highlighter-rouge">currentStep</code> is not <code class="highlighter-rouge">error</code> it means the issue could be corrected. These errors occur when bad data was
+supplied, e.g. an invalid birth date, invalid email, invalid organization, etc.</p>
+
+<h4 id="messages">Messages</h4>
+
+<p>Recoverable errors can be caused by invalid entries from the user, so the messaging that should be shown can be found in the <a href="docs/rest/programTheme.md">program theme</a> 
+of the response that was returned. The messaging found in the <code class="highlighter-rouge">errorId</code> section of the messages should be appropriate to show users.</p>
+
+<h4 id="example">Example</h4>
+
+<p>When submitting a student subject for the <code class="highlighter-rouge">collectStudentPersonalInfo</code> step, I sent this request:</p>
+<div class="language-json highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="p">{</span><span class="w">
+    </span><span class="s2">"firstName"</span><span class="p">:</span><span class="w"> </span><span class="s2">"First"</span><span class="p">,</span><span class="w">
+    </span><span class="s2">"lastName"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Last"</span><span class="p">,</span><span class="w">
+    </span><span class="s2">"birthDate"</span><span class="p">:</span><span class="w"> </span><span class="s2">"1-1-1"</span><span class="p">,</span><span class="w">
+    </span><span class="s2">"email"</span><span class="p">:</span><span class="w"> </span><span class="s2">"notValidEmail,com"</span><span class="p">,</span><span class="w">
+    </span><span class="s2">"universityId"</span><span class="p">:</span><span class="w"> </span><span class="mi">1</span><span class="w">
+</span><span class="p">}</span><span class="w">
+</span></code></pre></div></div>
+
+<p>And this is the response:</p>
+<div class="language-json highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="p">{</span><span class="w">
+    </span><span class="s2">"verificationId"</span><span class="p">:</span><span class="w"> </span><span class="s2">"111111111111111111111111"</span><span class="p">,</span><span class="w"> </span><span class="err">//</span><span class="w"> </span><span class="err">Verification</span><span class="w"> </span><span class="err">ID</span><span class="w"> </span><span class="err">that</span><span class="w"> </span><span class="err">should</span><span class="w"> </span><span class="err">be</span><span class="w"> </span><span class="err">used</span><span class="w"> </span><span class="err">for</span><span class="w"> </span><span class="err">all</span><span class="w"> </span><span class="err">future</span><span class="w"> </span><span class="err">calls</span><span class="w">
+    </span><span class="s2">"currentStep"</span><span class="p">:</span><span class="w"> </span><span class="s2">"collectStudentPersonalInfo"</span><span class="p">,</span><span class="w"> </span><span class="err">//</span><span class="w"> </span><span class="err">The</span><span class="w"> </span><span class="err">step</span><span class="w"> </span><span class="err">in</span><span class="w"> </span><span class="err">the</span><span class="w"> </span><span class="err">verification</span><span class="w"> </span><span class="err">flow</span><span class="w"> </span><span class="err">the</span><span class="w"> </span><span class="err">current</span><span class="w"> </span><span class="err">verification</span><span class="w"> </span><span class="err">is</span><span class="w"> </span><span class="err">on</span><span class="w">
+    </span><span class="s2">"errorIds"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
+        </span><span class="s2">"invalidBirthDate"</span><span class="p">,</span><span class="w">
+        </span><span class="s2">"invalidEmail"</span><span class="w">
+    </span><span class="p">]</span><span class="w">
+</span><span class="p">}</span><span class="w">
+</span></code></pre></div></div>
+
+<p>This lets me know I need to perform the <code class="highlighter-rouge">collectStudentPersonalInfo</code> step again, and I should find the <code class="highlighter-rouge">invalidBirthDate</code> and <code class="highlighter-rouge">invalidEmail</code> messages in the 
+<a href="docs/rest/programTheme.md">program theme</a> to find the message I should display to the user.</p>
+
+<h3 id="non-recoverable-errors">Non Recoverable Errors</h3>
+
+<p>A non recoverable error will have <code class="highlighter-rouge">error</code> as the <code class="highlighter-rouge">currentStep</code> and will provide both a list of <code class="highlighter-rouge">errorIds</code> as well as a <code class="highlighter-rouge">systemErrorMessage</code> that can be used to determine
+what caused the failure to assist with debugging. An example error response would look like this:</p>
+<div class="language-json highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="p">{</span><span class="w">
+    </span><span class="s2">"verificationId"</span><span class="p">:</span><span class="w"> </span><span class="s2">"111111111111111111111111"</span><span class="p">,</span><span class="w"> </span><span class="err">//</span><span class="w"> </span><span class="err">Verification</span><span class="w"> </span><span class="err">ID</span><span class="w"> </span><span class="err">that</span><span class="w"> </span><span class="err">should</span><span class="w"> </span><span class="err">be</span><span class="w"> </span><span class="err">used</span><span class="w"> </span><span class="err">for</span><span class="w"> </span><span class="err">all</span><span class="w"> </span><span class="err">future</span><span class="w"> </span><span class="err">calls</span><span class="w">
+    </span><span class="s2">"currentStep"</span><span class="p">:</span><span class="w"> </span><span class="s2">"error"</span><span class="p">,</span><span class="w"> </span><span class="err">//</span><span class="w"> </span><span class="err">The</span><span class="w"> </span><span class="err">step</span><span class="w"> </span><span class="err">in</span><span class="w"> </span><span class="err">the</span><span class="w"> </span><span class="err">verification</span><span class="w"> </span><span class="err">flow</span><span class="w"> </span><span class="err">the</span><span class="w"> </span><span class="err">current</span><span class="w"> </span><span class="err">verification</span><span class="w"> </span><span class="err">is</span><span class="w"> </span><span class="err">on</span><span class="w">
+    </span><span class="s2">"errorIds"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
+        </span><span class="err">//</span><span class="w"> </span><span class="err">The</span><span class="w"> </span><span class="err">errors</span><span class="w"> </span><span class="err">that</span><span class="w"> </span><span class="err">occurred</span><span class="w"> </span><span class="err">when</span><span class="w"> </span><span class="err">attempting</span><span class="w"> </span><span class="err">the</span><span class="w"> </span><span class="err">step</span><span class="w">
+    </span><span class="p">],</span><span class="w">
+    </span><span class="s2">"systemErrorMessage"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Debugging message"</span><span class="w"> </span><span class="err">//</span><span class="w"> </span><span class="err">A</span><span class="w"> </span><span class="err">description</span><span class="w"> </span><span class="err">of</span><span class="w"> </span><span class="err">the</span><span class="w"> </span><span class="err">cause</span><span class="w"> </span><span class="err">for</span><span class="w"> </span><span class="err">the</span><span class="w"> </span><span class="err">error</span><span class="w"> </span><span class="err">to</span><span class="w"> </span><span class="err">aid</span><span class="w"> </span><span class="err">with</span><span class="w"> </span><span class="err">debugging</span><span class="w">
+</span><span class="p">}</span><span class="w">
+</span></code></pre></div></div>
+
+<p>These errors occur when programs or verifications are not found, when internal SheerID errors occur, or when a step can not be completed for a non-user related reason.</p>
+
+<h4 id="messages-1">Messages</h4>
+
+<p>The supplied <code class="highlighter-rouge">errorIds</code> can be used to look up the user facing messages in the <a href="docs/rest/programTheme.md">program theme</a> just like for recoverable errors, however
+these can potentially be much more generic messages and difficult to understand. So to provide feedback for the integrator, the <code class="highlighter-rouge">systemErrorMessage</code> property can be used
+to understand what went wrong. These messages are NOT intended to be displayed to users, they are only for the integrators benefit.</p>
+
+<h4 id="example-1">Example</h4>
+
+<p>When submitting a student subject for the <code class="highlighter-rouge">collectStudentPersonalInfo</code> step, I sent this request:</p>
+<div class="language-json highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="p">{</span><span class="w">
+    </span><span class="s2">"firstName"</span><span class="p">:</span><span class="w"> </span><span class="s2">"First"</span><span class="p">,</span><span class="w">
+    </span><span class="s2">"lastName"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Last"</span><span class="p">,</span><span class="w">
+    </span><span class="s2">"birthDate"</span><span class="p">:</span><span class="w"> </span><span class="s2">"1-1-1"</span><span class="p">,</span><span class="w">
+    </span><span class="s2">"email"</span><span class="p">:</span><span class="w"> </span><span class="s2">"notValidEmail,com"</span><span class="p">,</span><span class="w">
+    </span><span class="s2">"invalidKey"</span><span class="p">:</span><span class="w"> </span><span class="s2">"something"</span><span class="w">
+</span><span class="p">}</span><span class="w">
+</span></code></pre></div></div>
+
+<p>And this is the response:</p>
+<div class="language-json highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="p">{</span><span class="w">
+    </span><span class="s2">"verificationId"</span><span class="p">:</span><span class="w"> </span><span class="s2">"111111111111111111111111"</span><span class="p">,</span><span class="w"> </span><span class="err">//</span><span class="w"> </span><span class="err">Verification</span><span class="w"> </span><span class="err">ID</span><span class="w"> </span><span class="err">that</span><span class="w"> </span><span class="err">should</span><span class="w"> </span><span class="err">be</span><span class="w"> </span><span class="err">used</span><span class="w"> </span><span class="err">for</span><span class="w"> </span><span class="err">all</span><span class="w"> </span><span class="err">future</span><span class="w"> </span><span class="err">calls</span><span class="w">
+    </span><span class="s2">"currentStep"</span><span class="p">:</span><span class="w"> </span><span class="s2">"error"</span><span class="p">,</span><span class="w"> </span><span class="err">//</span><span class="w"> </span><span class="err">The</span><span class="w"> </span><span class="err">step</span><span class="w"> </span><span class="err">in</span><span class="w"> </span><span class="err">the</span><span class="w"> </span><span class="err">verification</span><span class="w"> </span><span class="err">flow</span><span class="w"> </span><span class="err">the</span><span class="w"> </span><span class="err">current</span><span class="w"> </span><span class="err">verification</span><span class="w"> </span><span class="err">is</span><span class="w"> </span><span class="err">on</span><span class="w">
+    </span><span class="s2">"errorIds"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
+        </span><span class="s2">"invalidRequest"</span><span class="w">
+    </span><span class="p">],</span><span class="w">
+    </span><span class="s2">"systemErrorMessage"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Unexpected property 'invalidKey', expected one of: firstName, lastName, birthDate, email, universityId, metadata"</span><span class="w">
+</span><span class="p">}</span><span class="w">
+</span></code></pre></div></div>
+
+<p>This lets me know I need to change the structure of my student subject request, and I can look up the <code class="highlighter-rouge">invalidRequest</code> error in the 
+<a href="docs/rest/programTheme.md">program theme</a> to find the message I can show to the user. The <code class="highlighter-rouge">systemErrorMessage</code> tells me I need to remove the <code class="highlighter-rouge">invalidKey</code> property
+and only use the provided allowed keys.</p>
+
+
+          
+          <hr>
+          <h2 class="text-delta">Table of contents</h2>
+          
+          <ul>
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+              <li>
+                <a href="http://localhost:4000/integration/api/quickstart">API Quickstart</a>
+              </li>
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+              <li>
+                <a href="http://localhost:4000/integration/api/program-config">Program Config</a>
+              </li>
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+          </ul>
+          
+        </div>
+      </div>
+    </div>
+  </div>
+</html>
