@@ -1,0 +1,97 @@
+---
+layout: landing
+title: Home
+nav_order: 1
+permalink: /
+---
+
+<head>
+    <!-- Bootstrap core CSS -->
+<link href="https://getbootstrap.com/docs/4.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+    <!-- Documentation extras -->
+
+    <link href="https://getbootstrap.com/docs/4.2/assets/css/docs.min.css" rel="stylesheet">
+   
+
+</head><script src=""></script>
+<main class="bd-masthead" id="content" role="main">
+  <div class="container">
+    <div class="row align-items-center">
+      <div class="col-6 mx-auto col-md-6 order-md-2">
+{% include icons/check.svg class="img-fluid mb-3 mb-md-0" %}      </div>
+      <div class="col-md-6 order-md-1 text-center text-md-left pr-md-5">
+        <h1 class="mb-3 bd-text-purple-bright">SheerID JavaScript Library</h1>
+        <p class="lead">
+          Quickly integrate gated offer programs, e.g., student verification, with your website and ecommerce workflows.
+        </p>
+        <p class="lead mb-4">
+          SheerID does lots of things. This is a secondary paragraph which explains in slight more detail what some of those things are.
+        </p>
+        <div class="row mx-n2">
+          <div class="col-md px-2">
+            <a href="/getting-started" class="btn btn-lg btn-bd-primary w-100 mb-3">Documentation</a>
+          </div>
+          <div class="col-md px-2">
+            <a href="/getting-started/quickstart" class="btn btn-lg btn-outline-secondary w-100 mb-3">Quickstart</a>
+          </div>
+        </div>
+        <p class="text-muted mb-0">
+          Version 2.0
+        </p>
+      </div>
+    </div>
+  </div>
+</main>
+
+<div class="masthead-followup row m-0 border border-white">
+  <div class="col-12 col-md-4 p-3 p-md-5 bg-light border border-white">
+    <!-- Icon by Bytesize https://github.com/danklammer/bytesize-icons -->
+    {% include icons/import.svg width="32" height="32" class="text-primary mb-2" %}
+    <h3>Create Program</h3>
+    <p>Use our self-service app to create your first verification program.</p>
+
+{% highlight sh %}
+npm install sheerid
+{% endhighlight %}
+
+{% highlight sh %}
+gem install sheerid -v {{ site.current_ruby_version }}
+{% endhighlight %}
+
+    <hr class="half-rule">
+    <a class="btn btn-outline-primary" href="/integration/programs">Create your first program</a>
+  </div>
+
+  <div class="col-12 col-md-4 p-3 p-md-5 bg-light border border-white">
+    <!-- Icon by Bytesize https://github.com/danklammer/bytesize-icons -->
+    {% include icons/download.svg width="32" height="32" class="text-primary mb-2" %}
+    <h3>Install</h3>
+    <p>Get started quickly with our drop-in code to render your first form.</p>
+
+<h5>Add styles</h5>
+{% highlight html %}
+<link rel="stylesheet" href="https://preview.sheerid.com/docs/sheerid.css" type="text/css" />
+{% endhighlight %}
+
+<h5>JavaScript Library</h5>
+{% highlight html %}
+<script src="https://preview.sheerid.com/docs/sheerid.js"></script>
+{% endhighlight %}
+    <hr class="half-rule">
+    <a class="btn btn-outline-primary" href="/integration/sdk">Install the JS Library</a>
+  </div>
+
+  <div class="col-12 col-md-4 p-3 p-md-5 bg-light border border-white">
+    <!-- Icon by Bytesize https://github.com/danklammer/bytesize-icons -->
+    {% include icons/menu.svg width="32" height="32" class="text-primary mb-2" %}
+    <h3>Customize</h3>
+    <p>
+      Customize stuff
+    </p>
+    <img class="img-fluid mt-3 mx-auto" srcset="/assets/img/bootstrap-themes.png,
+                                                /assets/img/bootstrap-themes@2x.png 2x"
+                                        src="/assets/img/bootstrap-themes.png" alt="Bootstrap Themes" width="500" height="200">
+    <hr class="half-rule">
+    <a href="/integration/sdk/styling" class="btn btn-outline-primary">Customize your forms</a>
+  </div>
+</div>

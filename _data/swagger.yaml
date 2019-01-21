@@ -1,0 +1,1470 @@
+openapi: 3.0.0
+servers:
+  - url: /rest/v2
+info:
+  description: REST API to support performing verifications
+  version: 2.0.0
+  title: SheerID API
+  contact:
+    email: helpdesk@sheerid.com
+  license:
+    name: Apache 2.0
+    url: 'http://www.apache.org/licenses/LICENSE-2.0.html'
+paths:
+  /info:
+    get:
+      tags:
+        - build
+        - info
+      summary: Retrieve build information
+      operationId: getBuildInformation
+      responses:
+        '200':
+          description: 'Successful response'
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/BuildInformationResponseMessage'
+  /organization/university:
+    get:
+      tags:
+        - organization
+      summary: Search for universities based on a part of or full name
+      description: Search for universities based on a part of or full name
+      operationId: university
+      parameters:
+        - in: query
+          name: name
+          description: All or part of the university to use for search
+          required: true
+          schema:
+            type: string
+      responses:
+        '200':
+          description: >-
+            The list of [SimpleOrganization](#!/components/schemas/SimpleOrganization) matching the
+            search
+          content:
+            application/json:
+              schema:
+                type: array
+                items:
+                  $ref: '#/components/schemas/SimpleOrganization'
+  /organization/branchOfService:
+    get:
+      tags:
+        - organization
+      summary: Search for military branch of service based on a part of or full name
+      description: Search for military branch of service based on a part of or full name
+      operationId: branchOfService
+      parameters:
+        - in: query
+          name: name
+          description: All or part of the military branch of service to use for search
+          required: true
+          schema:
+            type: string
+      responses:
+        '200':
+          description: >-
+            The list of [SimpleOrganization](#!/components/schemas/SimpleOrganization) matching the
+            search
+          content:
+            application/json:
+              schema:
+                type: array
+                items:
+                  $ref: '#/components/schemas/SimpleOrganization'
+  /verification:
+    post:
+      tags:
+        - verification
+      summary: Start the verification flow for a given program
+      description: Start the verification flow for a given program
+      operationId: newVerification
+      responses:
+        '200':
+          description: The initial information required to render the verification form
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/NewVerificationResponse'
+        '400':
+          description: Bad request
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/NewVerificationResponse'
+        '404':
+          description: Program not found
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ErrorResponse'
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/NewVerificationRequest'
+        description: The request to retrieve a verification configuration for a given program
+        required: true
+  '/verification/{verificationId}':
+      get:
+        tags:
+          - verification
+        summary: Get current state of a verification
+        description: Get current state of a verification
+        operationId: getVerificationStatus
+        parameters:
+          - in: path
+            name: verificationId
+            description: Unique identifier for the ongoing verification
+            required: true
+            schema:
+              type: string
+        responses:
+          '200':
+            description: The current status for the verification
+            content:
+              application/json:
+                schema:
+                  $ref: '#/components/schemas/VerificationResponse'
+          '400':
+            description: Bad request
+            content:
+              application/json:
+                schema:
+                  $ref: '#/components/schemas/VerificationResponse'
+          '404':
+            description: Verification not found
+            content:
+              application/json:
+                schema:
+                  $ref: '#/components/schemas/ErrorResponse'
+  '/verification/{verificationId}/details':
+    get:
+      tags:
+        - verification
+      summary: Get detailed information about a verification. Requires an API token.
+      description: Get detailed information about a verification. Requires an API token.
+      operationId: getVerificationDetails
+      parameters:
+        - in: path
+          name: verificationId
+          description: Unique identifier for the ongoing verification
+          required: true
+          schema:
+            type: string
+      responses:
+        '200':
+          description: Detailed information about the verification
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/VerificationDetails'
+        '401':
+          description: Unauthorized
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ErrorResponse'
+        '404':
+          description: Verification not found
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ErrorResponse'
+      security:
+        - apiToken: []
+  '/verification/{verificationId}/step/collectStudentPersonalInfo':
+    post:
+      tags:
+        - verification
+      summary: Submit data for a student verification
+      description: Submit data for a student verification
+      operationId: submitStudentVerification
+      parameters:
+        - in: path
+          name: verificationId
+          description: Unique identifier for the ongoing verification
+          required: true
+          schema:
+            type: string
+      responses:
+        '200':
+          description: The result of the verification
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/VerificationResponse'
+        '400':
+          description: Bad request
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/VerificationResponse'
+        '404':
+          description: Verification not found
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ErrorResponse'
+        '429':
+          description: Rate limit for verification policy has been exceeded
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ErrorResponse'
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/Student'
+        description: >-
+          The person and organization data collected from the user to be
+          verified
+        required: true
+  '/verification/{verificationId}/step/collectMilitaryStatus':
+    post:
+      tags:
+        - verification
+      summary: Submit data to determine which kind of military verification to perform
+      description: Submit data to determine which kind of military verification to perform
+      operationId: submitMilitaryStatus
+      parameters:
+        - in: path
+          name: verificationId
+          description: Unique identifier for the program to use for verification
+          required: true
+          schema:
+            type: string
+      responses:
+        '200':
+          description: The next step to perform in the verification flow
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/VerificationResponse'
+        '400':
+          description: Bad request
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/VerificationResponse'
+        '404':
+          description: Verification not found
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ErrorResponse'
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/MilitaryStatusRequest'
+        description: The status of the military member being verified
+        required: true
+  '/verification/program/{programId}/step/collectStudentPersonalInfo':
+    post:
+      tags:
+        - verification
+      summary: Submit data for a student verification against a given program
+      description: Submit data for a student verification against a given program
+      operationId: submitStudentVerificationWithProgramId
+      parameters:
+        - in: path
+          name: programId
+          description: Unique identifier for the program to use for verification
+          required: true
+          schema:
+            type: string
+      responses:
+        '200':
+          description: The result of the verification
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/VerificationResponse'
+        '400':
+          description: Bad request
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/VerificationResponse'
+        '404':
+          description: Verification not found
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ErrorResponse'
+        '429':
+          description: Rate limit for verification policy has been exceeded
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ErrorResponse'
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/Student'
+        description: >-
+          The person and organization data collected from the user to be
+          verified
+        required: true
+  '/verification/{verificationId}/step/collectActiveMilitaryPersonalInfo':
+    post:
+      tags:
+        - verification
+      summary: Submit data for an active military verification
+      description: Submit data for an active military verification
+      operationId: submitActiveMilitaryVerification
+      parameters:
+        - in: path
+          name: verificationId
+          description: Unique identifier for the ongoing verification
+          required: true
+          schema:
+            type: string
+      responses:
+        '200':
+          description: The result of the verification
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/VerificationResponse'
+        '400':
+          description: Bad request
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/VerificationResponse'
+        '404':
+          description: Verification not found
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ErrorResponse'
+        '429':
+          description: Rate limit for verification policy has been exceeded
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ErrorResponse'
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/ActiveMilitary'
+        description: >-
+          The person and organization data collected from the user to be
+          verified
+        required: true
+  '/verification/program/{programId}/step/collectActiveMilitaryPersonalInfo':
+    post:
+      tags:
+        - verification
+      summary: Submit data for an active military verification against a given program
+      description: Submit data for an active military verification against a given program
+      operationId: submitActiveMilitaryVerificationWithProgramId
+      parameters:
+        - in: path
+          name: programId
+          description: Unique identifier for the program to use for verification
+          required: true
+          schema:
+            type: string
+      responses:
+        '200':
+          description: The result of the verification
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/VerificationResponse'
+        '400':
+          description: Bad request
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/VerificationResponse'
+        '404':
+          description: Verification not found
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ErrorResponse'
+        '429':
+          description: Rate limit for verification policy has been exceeded
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ErrorResponse'
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/ActiveMilitary'
+        description: >-
+          The person and organization data collected from the user to be
+          verified
+        required: true
+  '/verification/{verificationId}/step/collectInactiveMilitaryPersonalInfo':
+    post:
+      tags:
+        - verification
+      summary: Submit data for an inactive military verification
+      description: Submit data for an inactive military verification
+      operationId: submitInactiveMilitaryVerification
+      parameters:
+        - in: path
+          name: verificationId
+          description: Unique identifier for the ongoing verification
+          required: true
+          schema:
+            type: string
+      responses:
+        '200':
+          description: The result of the verification
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/VerificationResponse'
+        '400':
+          description: Bad request
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/VerificationResponse'
+        '404':
+          description: Verification not found
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ErrorResponse'
+        '429':
+          description: Rate limit for verification policy has been exceeded
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ErrorResponse'
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/InactiveMilitary'
+        description: >-
+          The person and organization data collected from the user to be
+          verified
+        required: true
+  '/verification/program/{programId}/step/collectInactiveMilitaryPersonalInfo':
+    post:
+      tags:
+        - verification
+      summary: Submit data for an inactive military verification against a given program
+      description: Submit data for an inactive military verification against a given program
+      operationId: submitInactiveMilitaryVerificationWithProgramId
+      parameters:
+        - in: path
+          name: programId
+          description: Unique identifier for the program to use for verification
+          required: true
+          schema:
+            type: string
+      responses:
+        '200':
+          description: The result of the verification
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/VerificationResponse'
+        '400':
+          description: Bad request
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/VerificationResponse'
+        '404':
+          description: Verification not found
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ErrorResponse'
+        '429':
+          description: Rate limit for verification policy has been exceeded
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ErrorResponse'
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/InactiveMilitary'
+        description: >-
+          The person and organization data collected from the user to be
+          verified
+        required: true
+  '/verification/{verificationId}/step/collectTeacherPersonalInfo':
+    post:
+      tags:
+        - verification
+      summary: Submit data for a teacher verification
+      description: Submit data for a teacher verification
+      operationId: submitTeacherVerification
+      parameters:
+        - in: path
+          name: verificationId
+          description: Unique identifier for the ongoing verification
+          required: true
+          schema:
+            type: string
+      responses:
+        '200':
+          description: The result of the verification
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/VerificationResponse'
+        '400':
+          description: Bad request
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/VerificationResponse'
+        '404':
+          description: Verification not found
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ErrorResponse'
+        '429':
+          description: Rate limit for verification policy has been exceeded
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ErrorResponse'
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/Teacher'
+        description: >-
+          The person and organization data collected from the user to be
+          verified
+        required: true
+  '/verification/program/{programId}/step/collectTeacherPersonalInfo':
+    post:
+      tags:
+        - verification
+      summary: Submit data for a teacher verification against a given program
+      description: Submit data for a teacher verification against a given program
+      operationId: submitTeacherVerificationWithProgramId
+      parameters:
+        - in: path
+          name: programId
+          description: Unique identifier for the program to use for verification
+          required: true
+          schema:
+            type: string
+      responses:
+        '200':
+          description: The result of the verification
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/VerificationResponse'
+        '400':
+          description: Bad request
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/VerificationResponse'
+        '404':
+          description: Verification not found
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ErrorResponse'
+        '429':
+          description: Rate limit for verification policy has been exceeded
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ErrorResponse'
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/Teacher'
+        description: >-
+          The person and organization data collected from the user to be
+          verified
+        required: true
+  '/verification/{verificationId}/step/collectSeniorPersonalInfo':
+    post:
+      tags:
+        - verification
+      summary: Submit data for a senior verification
+      description: Submit data for a senior verification
+      operationId: submitSeniorVerification
+      parameters:
+        - in: path
+          name: verificationId
+          description: Unique identifier for the ongoing verification
+          required: true
+          schema:
+            type: string
+      responses:
+        '200':
+          description: The result of the verification
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/VerificationResponse'
+        '400':
+          description: Bad request
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/VerificationResponse'
+        '404':
+          description: Verification not found
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ErrorResponse'
+        '429':
+          description: Rate limit for verification policy has been exceeded
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ErrorResponse'
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/Senior'
+        description: The person data collected from the user to be verified
+        required: true
+  '/verification/program/{programId}/step/collectSeniorPersonalInfo':
+    post:
+      tags:
+        - verification
+      summary: Submit data for a senior verification against a given program
+      description: Submit data for a senior verification against a given program
+      operationId: submitSeniorVerificationWithProgramId
+      parameters:
+        - in: path
+          name: programId
+          description: Unique identifier for the program to use for verification
+          required: true
+          schema:
+            type: string
+      responses:
+        '200':
+          description: The result of the verification
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/VerificationResponse'
+        '400':
+          description: Bad request
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/VerificationResponse'
+        '404':
+          description: Verification not found
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ErrorResponse'
+        '429':
+          description: Rate limit for verification policy has been exceeded
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ErrorResponse'
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/Senior'
+        description: The person data collected from the user to be verified
+        required: true
+  '/verification/{verificationId}/step/docUpload/{docUploadToken}':
+    post:
+      tags:
+        - verification
+      summary: Submit files for document review
+      description: Submit files for document review
+      operationId: submitDocumentReviewFiles
+      parameters:
+        - in: path
+          name: verificationId
+          description: Unique identifier for the ongoing verification
+          required: true
+          schema:
+            type: string
+        - in: path
+          name: docUploadToken
+          description: Token to authorize a document to be uploaded for a given verification
+          required: true
+          schema:
+            type: string
+      responses:
+        '200':
+          description: The result of the document upload
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/VerificationResponse'
+        '400':
+          description: Bad request
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/VerificationResponse'
+        '404':
+          description: Verification not found
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ErrorResponse'
+      requestBody:
+        content:
+          multipart/form-data:
+            schema:
+              $ref: '#/components/schemas/DocumentUploadRequest'
+        required: true
+  '/program/{programId}/theme':
+    get:
+      tags:
+        - program
+      summary: Get the theme data (messages and CSS) for a program
+      description: Get the theme data (messages and CSS) for a program
+      operationId: getProgramTheme
+      parameters:
+        - in: path
+          name: programId
+          description: Unique identifier for the program
+          required: true
+          schema:
+            type: string
+      responses:
+        '200':
+          description: The theme data for a program
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ProgramTheme'
+        '404':
+          description: Program not found
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ErrorResponse'
+components:
+  securitySchemes:
+    apiToken:
+      type: apiKey
+      name: Authorization
+      in: header
+  schemas:
+    BuildInformationResponseMessage:
+      type: object
+      properties:
+        sheeridVersion:
+          type: string
+          description: The version of SheerID deployed on the server
+        sheeridGitCommit:
+          type: string
+          description: The Git SHA1 hash for the last commit in this build
+        puppetGitCommit:
+          type: string
+          description: The Git SHA1 hash for the last commit in the puppet configuration realm at deployment time
+        buildTimestamp:
+          type: string
+          description: The timestamp of the build which produced the version of SheerID deployed on the server
+    Organization:
+      type: object
+      properties:
+        active:
+          type: boolean
+          description: Whether or not the organization is currently active
+        providers:
+          type: object
+          description: The provider keys for the organization
+        aliases:
+          type: array
+          description: The list of aliases for the organization
+          items:
+            type: string
+        accountId:
+          type: string
+          description: The account ID for the organization
+        city:
+          type: string
+          description: The organization city
+        state:
+          type: string
+          description: The organization state
+        country:
+          type: string
+          description: The organization country
+        zip:
+          type: string
+          description: The organization zip code
+        phone:
+          type: string
+          description: The organization phone
+        type:
+          $ref: '#/components/schemas/OrganizationType'
+        parentOrganizationId:
+          type: number
+          description: The parent organization ID
+        street:
+          type: string
+          description: The organization street
+        emailDomains:
+          type: array
+          description: The list of email domains for the organization
+          items:
+            type: string
+        ips:
+          type: array
+          description: The list of ips addresses for the organization
+          items:
+            type: string
+        tags:
+          type: array
+          description: The list of tags for the organization
+          items:
+            type: string
+        id:
+          type: integer
+          format: int64
+          description: The organization ID
+        name:
+          type: string
+          description: The organization name
+      required:
+        - name
+    SimpleOrganization:
+      type: object
+      properties:
+        name:
+          type: string
+          description: The name of the organization
+        id:
+          type: integer
+          format: int64
+          description: The unique identifier for the organization
+    OrganizationType:
+      type: string
+      enum:
+        - UNIVERSITY
+        - MEMBERSHIP
+        - MILITARY
+        - FIRST_RESPONDER
+        - MEDICAL
+        - NON_PROFIT
+        - CORPORATE
+        - K12
+    NewVerificationRequest:
+      type: object
+      properties:
+        programId:
+          type: string
+          description: The program ID to use for the verification
+      required:
+        - programId
+    DocumentUploadRequest:
+      type: object
+      description: Request to upload files for document review
+      properties:
+        file:
+          type: array
+          items:
+            type: string
+            format: binary
+      required:
+        - file
+        - docUploadToken
+    ProgramTheme:
+      type: object
+      properties:
+        intl:
+          $ref: '#/components/schemas/Internationalization'
+        customCss:
+          type: string
+          description: Custom CSS to use when rendering the verification form
+      required:
+        - intl
+        - customCss
+    Internationalization:
+      type: object
+      properties:
+        locale:
+          type: string
+          description: The locale to use for internationalization
+        messages:
+          $ref: '#/components/schemas/ProgramMessages'
+      required:
+        - locale
+        - messages
+    ProgramMessages:
+      type: object
+      properties:
+        stepMessages:
+          $ref: '#/components/schemas/StepMessages'
+        errorId:
+          type: object
+          additionalProperties:
+            type: string
+          description: The message to use for a given ErrorId
+        dateTime:
+          $ref: '#/components/schemas/DateTimeMessages'
+        schoolName:
+          type: string
+          description: The message to use for the phrase 'School Name'
+        error:
+          type: string
+          description: The message to use for the word 'Error'
+        sheerIdFaqs:
+          type: string
+          description: The message to use for the phrase 'SheerID FAQs'
+        poweredBy:
+          type: string
+          description: The message to use for the phrase 'Powered By'
+        personalInformation:
+          type: string
+          description: The message to use for the phrase 'Personal Information'
+        birthDate:
+          type: string
+          description: The message to use for phrase 'Birth Date'
+        school:
+          type: string
+          description: The message to use for the word 'School'
+        verifyAndContinue:
+          type: string
+          description: The message to use for the phrase 'Verify and Continue'
+        studentInfoShared:
+          type: string
+          description: The message to use for informing the student user how their data is shared
+      required:
+        - studentFaq
+        - stepMessages
+        - errorId
+        - dateTime
+        - schoolName
+        - error
+        - sheerIdFaqs
+        - poweredBy
+        - personalInformation
+        - birthDate
+        - school
+        - verifyAndContinue
+        - studentInfoShared
+    StepMessages:
+      type: object
+      properties:
+        collectStudentPersonalInfo:
+          $ref: '#/components/schemas/StudentInfoMessages'
+        docUpload:
+          $ref: '#/components/schemas/DocUploadMessages'
+        pending:
+          $ref: '#/components/schemas/PendingMessages'
+        success:
+          $ref: '#/components/schemas/SuccessMessages'
+      required:
+        - collectStudentPersonalInfo
+        - docUpload
+        - pending
+        - success
+    StudentInfoMessages:
+      type: object
+      properties:
+        title:
+          type: string
+          description: The title for the collect student personal information step
+        subtitle:
+          type: string
+          description: The subtitle for the collect student personal information step
+        formTitle:
+          type: string
+          description: The title for the form to use when collecting student personal information
+      required:
+        - title
+        - subtitle
+        - formTitle
+    DocUploadMessages:
+      type: object
+      properties:
+        title:
+          type: string
+          description: The title for the document upload step
+        subtitle:
+          type: string
+          description: The subtitle for the document upload step
+        acceptedTypes:
+          type: string
+          description: The messaging to use for the accepted file types when uploading a document
+        submitButtonLabel:
+          type: string
+          description: The message to use for the submit button when uploading a document
+        footer:
+          type: string
+          description: The message to place on the footer of the document upload form
+      required:
+        - title
+        - subtitle
+        - acceptedTypes
+        - submitButtonLabel
+        - footer
+    PendingMessages:
+      type: object
+      properties:
+        title:
+          type: string
+          description: The title for the pending step
+        subtitle:
+          type: string
+          description: The subtitle for the pending step
+        subtitle2:
+          type: string
+          description: The subtitle2 for the pending step
+      requried:
+        - title
+        - subtitle
+        - subtitle2
+    SuccessMessages:
+      type: object
+      properties:
+        title:
+          type: string
+          description: The title for the success step
+        subtitle:
+          type: string
+          description: The subtitle for the success step
+      required:
+        - title
+        - subtitle
+    DateTimeMessages:
+      type: object
+      properties:
+        january:
+          type: string
+          description: The message to use for the month 'January'
+        february:
+          type: string
+          description: The message to use for the month 'February'
+        march:
+          type: string
+          description: The message to use for the month 'March'
+        april:
+          type: string
+          description: The message to use for the month 'April'
+        may:
+          type: string
+          description: The message to use for the month 'May'
+        june:
+          type: string
+          description: The message to use for the month 'June'
+        july:
+          type: string
+          description: The message to use for the month 'July'
+        august:
+          type: string
+          description: The message to use for the month 'August'
+        september:
+          type: string
+          description: The message to use for the month 'September'
+        october:
+          type: string
+          description: The message to use for the month 'October'
+        november:
+          type: string
+          description: The message to use for the month 'November'
+        december:
+          type: string
+          description: The message to use for the month 'December'
+        month:
+          type: string
+          description: The message to use for the word 'Month'
+        day:
+          type: string
+          description: The message to use for the word 'Day'
+        year:
+          type: string
+          description: The message to use for the word 'Year'
+      required:
+        - january
+        - february
+        - march
+        - april
+        - may
+        - june
+        - july
+        - august
+        - september
+        - october
+        - november
+        - december
+        - month
+        - day
+        - year
+    VerificationStep:
+      type: string
+      enum:
+        - collectStudentPersonalInfo
+        - collectMilitaryPersonalInfo
+        - collectActiveMilitaryPersonalInfo
+        - collectInactiveMilitaryPersonalInfo
+        - collectTeacherPersonalInfo
+        - collectSeniorPersonalInfo
+        - docUpload
+        - success
+        - error
+        - pending
+    VerificationResponse:
+      type: object
+      description: The result of a verification step
+      oneOf:
+        - $ref: '#/components/schemas/SuccessResponse'
+        - $ref: '#/components/schemas/NewVerificationResponse'
+        - $ref: '#/components/schemas/DocumentReviewResponse'
+        - $ref: '#/components/schemas/PendingResponse'
+        - $ref: '#/components/schemas/ErrorResponse'
+    NewVerificationResponse:
+      type: object
+      properties:
+        verificationId:
+          type: string
+          description: The unique identifier for the ongoing verification
+        currentStep:
+          $ref: '#/components/schemas/VerificationStep'
+        submissionUrl:
+          type: string
+          description: The url to use for submitting person data
+        errorIds:
+          type: array
+          description: The list of errors that occurred, if any
+          items:
+            $ref: '#/components/schemas/ErrorId'
+      required:
+        - verificationId
+        - currentStep
+        - submissionUrl
+    SuccessResponse:
+      type: object
+      description: The results of a verification
+      properties:
+        verificationId:
+          type: string
+          description: >-
+            The unique ID for the
+            [VerificationRequest](#!/components/schemas/VerificationRequest) associated
+            with this response
+        rewardCode:
+          type: string
+          description: The reward code to present to the verified user
+        currentStep:
+          $ref: '#/components/schemas/VerificationStep'
+        errorIds:
+          type: array
+          description: The list of errors that occurred, if any
+          items:
+            $ref: '#/components/schemas/ErrorId'
+      required:
+        - verificationId
+        - rewardCode
+        - currentStep
+    DocumentReviewResponse:
+      type: object
+      description: The results of a verification
+      properties:
+        verificationId:
+          type: string
+          description: >-
+            The unique ID for the
+            [VerificationRequest](#!/components/schemas/VerificationRequest) associated
+            with this response
+        currentStep:
+          $ref: '#/components/schemas/VerificationStep'
+        submissionUrl:
+          type: string
+          description: The URL to use for uploading documents
+        errorIds:
+          type: array
+          description: The list of errors that occurred, if any
+          items:
+            $ref: '#/components/schemas/ErrorId'
+        segment:
+          $ref: '#/components/schemas/Segment'
+        subsegment:
+          $ref: '#/components/schemas/SubSegment'
+      required:
+        - verificationId
+        - currentStep
+        - submissionUrl
+        - segment
+    Segment:
+      type: string
+      description: The market segment being verified
+      enum:
+        - student
+        - teacher
+        - military
+        - senior
+    SubSegment:
+      type: string
+      description: The subsegment being verified
+      enum:
+        - activeDuty
+        - veteran
+        - retiree
+        - reservist
+    PendingResponse:
+      type: object
+      description: The results of a verification
+      properties:
+        verificationId:
+          type: string
+          description: >-
+            The unique ID for the
+            [VerificationRequest](#!/components/schemas/VerificationRequest) associated
+            with this response
+        statusUrl:
+          type: string
+          description: The url to poll to determine the result of the document review
+        currentStep:
+          $ref: '#/components/schemas/VerificationStep'
+        errorIds:
+          type: array
+          description: The list of errors that occurred, if any
+          items:
+            $ref: '#/components/schemas/ErrorId'
+      required:
+        - verificationId
+        - currentStep
+        - statusUrl
+    ErrorResponse:
+      type: object
+      description: The results of a verification
+      properties:
+        verificationId:
+          type: string
+          description: >-
+            The unique ID for the
+            [VerificationRequest](#!/components/schemas/VerificationRequest) associated
+            with this response
+        errorIds:
+          type: array
+          description: The list of errors that occurred
+          items:
+            $ref: '#/components/schemas/ErrorId'
+        currentStep:
+          $ref: '#/components/schemas/VerificationStep'
+        systemErrorMessage:
+          type: string
+          description: A description of the error that occurred to use for debugging purposes, not meant to be shown to the end user
+      required:
+        - verificationId
+        - currentStep
+        - errorIds
+        - systemErrorMessage
+    ErrorId:
+      type: string
+      description: The unique identifier for the error messaging to show to the end user.
+      enum:
+        - internalServerError
+        - noProgram
+        - invalidProgram
+        - noVerification
+        - invalidStep
+        - invalidOrganizationId
+        - invalidFirstName
+        - invalidLastName
+        - invalidEmail
+        - invalidBirthDate
+        - invalidRequest
+        - underagePerson
+        - outsideAgePerson
+        - futureBirthDate
+        - noValidFiles
+        - verificationLimitExceeded
+        - docReviewLimitExceeded
+        - maxMetadataValuesExceeded
+        - maxMetadataLengthExceeded
+    PersonalInfoMetadata:
+      type: object
+      additionalProperties:
+        type: string
+        maxLength: 10000
+      maxProperties: 20
+      description: A collection of custom metadata to be stored with the verification
+    Student:
+      type: object
+      description: A student to be verified
+      properties:
+        firstName:
+          description: The first name of the person being verified
+          type: string
+        lastName:
+          description: The last name of the person being verified
+          type: string
+        email:
+          $ref: '#/components/schemas/ValidEmail'
+        birthDate:
+          description: The date of birth of the person being verified (format YYYY-MM-DD)
+          type: string
+          format: date
+        universityId:
+          type: integer
+          format: int64
+          description: The unique identifier for the university
+        metadata:
+          $ref: '#/components/schemas/PersonalInfoMetadata'
+      required:
+        - firstName
+        - lastName
+        - email
+        - birthDate
+        - universityId
+    ActiveMilitary:
+      type: object
+      description: An active duty member to be verified
+      properties:
+        firstName:
+          description: The first name of the person being verified
+          type: string
+        lastName:
+          description: The last name of the person being verified
+          type: string
+        email:
+          $ref: '#/components/schemas/ValidEmail'
+        birthDate:
+          description: The date of birth of the person being verified (format YYYY-MM-DD)
+          type: string
+          format: date
+        branchOfServiceId:
+          type: integer
+          format: int64
+          description: The unique identifier for the branch of service
+        metadata:
+          $ref: '#/components/schemas/PersonalInfoMetadata'
+      required:
+        - firstName
+        - lastName
+        - email
+        - birthDate
+        - branchOfServiceId
+    InactiveMilitary:
+      type: object
+      description: An inactive military member to be verified
+      properties:
+        firstName:
+          description: The first name of the person being verified
+          type: string
+        lastName:
+          description: The last name of the person being verified
+          type: string
+        email:
+          $ref: '#/components/schemas/ValidEmail'
+        birthDate:
+          description: The date of birth of the person being verified (format YYYY-MM-DD)
+          type: string
+          format: date
+        branchOfServiceId:
+          type: integer
+          format: int64
+          description: The unique identifier for the branch of service
+        dischargeDate:
+          type: string
+          format: date
+          description: The date the person being verified was discharged from the military
+        metadata:
+          $ref: '#/components/schemas/PersonalInfoMetadata'
+      required:
+        - firstName
+        - lastName
+        - email
+        - birthDate
+        - branchOfServiceId
+        - dischargeDate
+    Teacher:
+      type: object
+      description: An teacher to be verified
+      properties:
+        firstName:
+          description: The first name of the person being verified
+          type: string
+        lastName:
+          description: The last name of the person being verified
+          type: string
+        email:
+          $ref: '#/components/schemas/ValidEmail'
+        schoolId:
+          type: integer
+          format: int64
+          description: The unique identifier for the school
+        schoolPostalCode:
+          type: string
+          description: The postal code for the school the teacher is affiliated with
+        metadata:
+          $ref: '#/components/schemas/PersonalInfoMetadata'
+      required:
+        - firstName
+        - lastName
+        - email
+        - schoolId
+        - schoolPostalCode
+    Senior:
+      type: object
+      description: A senior to be verified
+      properties:
+        firstName:
+          description: The first name of the person being verified
+          type: string
+        lastName:
+          description: The last name of the person being verified
+          type: string
+        email:
+          $ref: '#/components/schemas/ValidEmail'
+        birthDate:
+          description: The date of birth of the person being verified (format YYYY-MM-DD)
+          type: string
+          format: date
+        postalCode:
+          type: string
+          description: The postal code for the person being verified
+        metadata:
+          $ref: '#/components/schemas/PersonalInfoMetadata'
+      required:
+        - firstName
+        - lastName
+        - email
+        - birthDate
+        - postalCode
+    MilitaryStatusRequest:
+      type: object
+      properties:
+        status:
+          $ref: '#/components/schemas/MilitaryStatus'
+      required:
+        - status
+    MilitaryStatus:
+      type: string
+      enum:
+        - ACTIVE_DUTY
+        - VERTERAN
+        - RESERVIST
+        - MILITARY_RETIREE
+    ValidEmail:
+      description: The email address of the person being verified
+      type: string
+      pattern: '(^\s*?[A-Za-z0-9!#$%&''*+\/=?^_`{|}~-]+(\.[A-Za-z0-9!#$%&''*+\/=?^_`{|}~-]+)*@([A-Za-z0-9!#$%&''*+\/=?^_`{|}~-]+(\.[A-Za-z0-9!#$%&''*+\/=?^_`{|}~-]+)+|\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])\s*?$)'
+    VerificationDetails:
+      type: object
+      description: Detailed information about a given verification. Must have a valid API token to view.

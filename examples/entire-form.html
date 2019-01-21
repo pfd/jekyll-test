@@ -1,0 +1,34 @@
+---
+layout: null
+---
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>SheerID | Entire Form</title>
+    <link rel="stylesheet" href="https://preview.sheerid.com/docs/sheerid.css" type="text/css" />
+</head>
+<body>
+    <noscript>Please enable Javascript to view this content.</noscript>
+
+    <p>This is where your page content would be.</p>
+
+    <div id="my-form"></div>
+
+    <script src="https://preview.sheerid.com/docs/sheerid.js"></script>
+    <script>
+        try {
+            // Create a program at trial-preview.sheerid.com
+            var myProgramId = '5bbd127d9781852f68e14ddc';
+            var sheerid = window.sheerid;
+            sheerId.setOptions({logLevel: 'info'});
+            var myForm = new sheerId.VerificationForm(document.getElementById('my-form'), myProgramId);
+        } catch (e) {
+            console.error(e);
+        }
+    </script>
+</body>
+</html>

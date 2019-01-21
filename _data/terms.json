@@ -1,0 +1,10 @@
+[
+  {
+    "label": "test mode",
+    "definition": "When you're using the preview site for testing."
+  },
+  {
+    "label": "flows",
+    "definition": "the series of steps you take to complete a verification",
+  }
+]

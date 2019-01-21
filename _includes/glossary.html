@@ -1,0 +1,8 @@
+<!--- Renders the entire glossary -->
+
+<div class="glossary">
+    {% for term in site.data.terms %}
+    <strong>{{ term.label }}</strong>
+    <p>&nbsp;&nbsp;&nbsp;&nbsp;{{ term.definition }}</p>
+    {% endfor %}
+</div>
