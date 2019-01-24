@@ -6,18 +6,18 @@
   <meta http-equiv="X-UA-Compatible" content="IE=Edge">
 
   <title> - SheerID Docs</title>
-  <link rel="stylesheet" href="http://localhost:4000/assets/css/just-the-docs.css">
+  <link rel="stylesheet" href="http://localhost:4000/jekyll-test/assets/css/just-the-docs.css">
   
-  <script type="text/javascript" src="http://localhost:4000/assets/js/vendor/lunr.min.js"></script>
+  <script type="text/javascript" src="http://localhost:4000/jekyll-test/assets/js/vendor/lunr.min.js"></script>
   
-  <script type="text/javascript" src="http://localhost:4000/assets/js/just-the-docs.js"></script>
+  <script type="text/javascript" src="http://localhost:4000/jekyll-test/assets/js/just-the-docs.js"></script>
 
   <meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
 
   <div class="page-wrap">
     <div class="side-bar">
-      <a href="http://localhost:4000" class="site-title fs-6 lh-tight">SheerID Docs</a>
+      <a href="http://localhost:4000/jekyll-test/" class="site-title fs-6 lh-tight">SheerID Docs</a>
       <span class="fs-3"><button class="js-main-nav-trigger navigation-list-toggle btn btn-outline" type="button" data-text-toggle="Hide">Menu</button></span>
       <div class="navigation main-nav js-main-nav">
         <nav>
@@ -28,7 +28,7 @@
         
           <li class="navigation-list-item active">
             
-            <a href="http://localhost:4000/404.html" class="navigation-list-link"></a>
+            <a href="http://localhost:4000/jekyll-test/404.html" class="navigation-list-link"></a>
             
           </li>
         
@@ -38,7 +38,7 @@
         
           <li class="navigation-list-item active">
             
-            <a href="http://localhost:4000/examples/entire-form.html" class="navigation-list-link"></a>
+            <a href="http://localhost:4000/jekyll-test/examples/entire-form.html" class="navigation-list-link"></a>
             
           </li>
         
@@ -52,7 +52,7 @@
         
           <li class="navigation-list-item">
             
-            <a href="http://localhost:4000/" class="navigation-list-link">Home</a>
+            <a href="http://localhost:4000/jekyll-test/" class="navigation-list-link">Home</a>
             
           </li>
         
@@ -82,7 +82,7 @@
         
           <li class="navigation-list-item">
             
-            <a href="http://localhost:4000/getting-started" class="navigation-list-link">Getting Started</a>
+            <a href="http://localhost:4000/jekyll-test/getting-started" class="navigation-list-link">Getting Started</a>
             
               
               <ul class="navigation-list-child-list ">
@@ -94,7 +94,7 @@
                   
                     <li class="navigation-list-item ">
                       
-                      <a href="http://localhost:4000/getting-started/quickstart" class="navigation-list-link">Quickstart</a>
+                      <a href="http://localhost:4000/jekyll-test/getting-started/quickstart" class="navigation-list-link">Quickstart</a>
                       
                     </li>
                   
@@ -112,7 +112,7 @@
                   
                     <li class="navigation-list-item ">
                       
-                      <a href="http://localhost:4000/getting-started/concepts/" class="navigation-list-link">Concepts</a>
+                      <a href="http://localhost:4000/jekyll-test/getting-started/concepts/" class="navigation-list-link">Concepts</a>
                       
                         
                         <ul class="navigation-list-child-list">
@@ -143,7 +143,7 @@
                           
                             
                               <li class="navigation-list-item ">
-                                <a href="http://localhost:4000/getting-started/concepts/steps" class="navigation-list-link">Steps</a>
+                                <a href="http://localhost:4000/jekyll-test/getting-started/concepts/steps" class="navigation-list-link">Steps</a>
                               </li>
                             
                           
@@ -151,7 +151,7 @@
                           
                             
                               <li class="navigation-list-item ">
-                                <a href="http://localhost:4000/getting-started/concepts/flows" class="navigation-list-link">Flows</a>
+                                <a href="http://localhost:4000/jekyll-test/getting-started/concepts/flows" class="navigation-list-link">Flows</a>
                               </li>
                             
                           
@@ -165,7 +165,7 @@
                           
                             
                               <li class="navigation-list-item ">
-                                <a href="http://localhost:4000/getting-started/concepts/segments" class="navigation-list-link">Segment Types</a>
+                                <a href="http://localhost:4000/jekyll-test/getting-started/concepts/segments" class="navigation-list-link">Segment Types</a>
                               </li>
                             
                           
@@ -250,7 +250,7 @@
         
           <li class="navigation-list-item">
             
-            <a href="http://localhost:4000/integration" class="navigation-list-link">Integration</a>
+            <a href="http://localhost:4000/jekyll-test/integration" class="navigation-list-link">Integration</a>
             
               
               <ul class="navigation-list-child-list ">
@@ -270,7 +270,7 @@
                   
                     <li class="navigation-list-item ">
                       
-                      <a href="http://localhost:4000/integration/programs" class="navigation-list-link">Manage Programs</a>
+                      <a href="http://localhost:4000/jekyll-test/integration/programs" class="navigation-list-link">Manage Programs</a>
                       
                     </li>
                   
@@ -286,7 +286,7 @@
                   
                     <li class="navigation-list-item ">
                       
-                      <a href="http://localhost:4000/integration/sdk" class="navigation-list-link">JavaScript SDK</a>
+                      <a href="http://localhost:4000/jekyll-test/integration/sdk" class="navigation-list-link">JavaScript SDK</a>
                       
                         
                         <ul class="navigation-list-child-list">
@@ -301,7 +301,7 @@
                           
                             
                               <li class="navigation-list-item ">
-                                <a href="http://localhost:4000/integration/sdk/styling" class="navigation-list-link">Styling</a>
+                                <a href="http://localhost:4000/jekyll-test/integration/sdk/styling" class="navigation-list-link">Styling</a>
                               </li>
                             
                           
@@ -311,7 +311,7 @@
                           
                             
                               <li class="navigation-list-item ">
-                                <a href="http://localhost:4000/integration/sdk/internationalization" class="navigation-list-link">Internationalization</a>
+                                <a href="http://localhost:4000/jekyll-test/integration/sdk/internationalization" class="navigation-list-link">Internationalization</a>
                               </li>
                             
                           
@@ -363,7 +363,7 @@
                   
                     <li class="navigation-list-item ">
                       
-                      <a href="http://localhost:4000/integration/api" class="navigation-list-link">REST API</a>
+                      <a href="http://localhost:4000/jekyll-test/integration/api" class="navigation-list-link">REST API</a>
                       
                         
                         <ul class="navigation-list-child-list">
@@ -390,7 +390,7 @@
                           
                             
                               <li class="navigation-list-item ">
-                                <a href="http://localhost:4000/integration/api/quickstart" class="navigation-list-link">API Quickstart</a>
+                                <a href="http://localhost:4000/jekyll-test/integration/api/quickstart" class="navigation-list-link">API Quickstart</a>
                               </li>
                             
                           
@@ -408,7 +408,7 @@
                           
                             
                               <li class="navigation-list-item ">
-                                <a href="http://localhost:4000/integration/api/program-config" class="navigation-list-link">Program Config</a>
+                                <a href="http://localhost:4000/jekyll-test/integration/api/program-config" class="navigation-list-link">Program Config</a>
                               </li>
                             
                           
@@ -442,7 +442,7 @@
                   
                     <li class="navigation-list-item ">
                       
-                      <a href="http://localhost:4000/api.html" class="navigation-list-link">API Docs</a>
+                      <a href="http://localhost:4000/jekyll-test/api.html" class="navigation-list-link">API Docs</a>
                       
                     </li>
                   
@@ -469,7 +469,7 @@
         
           <li class="navigation-list-item">
             
-            <a href="http://localhost:4000/tutorials" class="navigation-list-link">Tutorials</a>
+            <a href="http://localhost:4000/jekyll-test/tutorials" class="navigation-list-link">Tutorials</a>
             
               
               <ul class="navigation-list-child-list ">
@@ -487,7 +487,7 @@
                   
                     <li class="navigation-list-item ">
                       
-                      <a href="http://localhost:4000/tutorials/custom-form" class="navigation-list-link">Create a custom form</a>
+                      <a href="http://localhost:4000/jekyll-test/tutorials/custom-form" class="navigation-list-link">Create a custom form</a>
                       
                     </li>
                   
@@ -509,7 +509,7 @@
                   
                     <li class="navigation-list-item ">
                       
-                      <a href="http://localhost:4000/tutorials/tasks" class="navigation-list-link">Tasks</a>
+                      <a href="http://localhost:4000/jekyll-test/tutorials/tasks" class="navigation-list-link">Tasks</a>
                       
                     </li>
                   
@@ -558,7 +558,7 @@
         
           <li class="navigation-list-item">
             
-            <a href="http://localhost:4000/reporting" class="navigation-list-link">Reporting</a>
+            <a href="http://localhost:4000/jekyll-test/reporting" class="navigation-list-link">Reporting</a>
             
               
               <ul class="navigation-list-child-list ">
@@ -623,7 +623,7 @@
         
           <li class="navigation-list-item">
             
-            <a href="http://localhost:4000/reference" class="navigation-list-link">Reference</a>
+            <a href="http://localhost:4000/jekyll-test/reference" class="navigation-list-link">Reference</a>
             
           </li>
         
@@ -633,7 +633,7 @@
         
           <li class="navigation-list-item">
             
-            <a href="http://localhost:4000/glossary.html" class="navigation-list-link">Glossary</a>
+            <a href="http://localhost:4000/jekyll-test/glossary.html" class="navigation-list-link">Glossary</a>
             
           </li>
         
@@ -671,175 +671,175 @@
     "id": "0",
     "title": "",
     "content": "  404  Page not found :(  The requested page could not be found.",
-    "url": "http://localhost:4000/404.html",
+    "url": "http://localhost:4000/jekyll-test/404.html",
     "relUrl": "/404.html"
   },
   "1": {
     "id": "1",
     "title": "API Docs",
     "content": "    &amp;lt;section class=&quot;doc-content&quot;&amp;gt;        &amp;lt;section class=&quot;left-docs&quot;&amp;gt;            &amp;lt;h3&amp;gt;                &amp;lt;a id=&quot;documentationgetting_started&quot;&amp;gt;                    Getting Started                                    &amp;lt;/a&amp;gt;                &amp;lt;a class=&quot;editor-link&quot; href=&quot;cloudcannon:collections/_documentation/getting_started.md&quot;&amp;gt;Edit&amp;lt;/a&amp;gt;            &amp;lt;/h3&amp;gt;                                    &amp;lt;p&amp;gt;Welcome to our API.&amp;lt;/p&amp;gt;This API document is designed for those interested in developing for our platform.This API is still under development and will evolve.You’ll succeed if you do this.Here’s some useful information.Something may not happen if you try and do this.Something bad will happen if you do this.        &amp;lt;/section&amp;gt;            &amp;lt;/section&amp;gt;    &amp;lt;section class=&quot;doc-content&quot;&amp;gt;        &amp;lt;section class=&quot;left-docs&quot;&amp;gt;            &amp;lt;h3&amp;gt;                &amp;lt;a id=&quot;documentationauthentication&quot;&amp;gt;                    Authentication                                    &amp;lt;/a&amp;gt;                &amp;lt;a class=&quot;editor-link&quot; href=&quot;cloudcannon:collections/_documentation/authentication.md&quot;&amp;gt;Edit&amp;lt;/a&amp;gt;            &amp;lt;/h3&amp;gt;                                    &amp;lt;p&amp;gt;You need to be authenticated for all API requests. You can generate an API key in your developer dashboard.&amp;lt;/p&amp;gt;Add the API key to all requests as a GET parameter.Nothing will work unless you include this API key        &amp;lt;/section&amp;gt;                        &amp;lt;section class=&quot;right-code&quot;&amp;gt; $.get(&quot;http://api.myapp.com/books/&quot;, { &quot;token&quot;: &quot;YOUR_APP_KEY&quot;}, function(data) {   alert(data); }); curl http://api.myapp.com/books?token=YOUR_APP_KEY            &amp;lt;/section&amp;gt;            &amp;lt;/section&amp;gt;    &amp;lt;section class=&quot;doc-content&quot;&amp;gt;        &amp;lt;section class=&quot;left-docs&quot;&amp;gt;            &amp;lt;h3&amp;gt;                &amp;lt;a id=&quot;documentationerrors&quot;&amp;gt;                    Errors                                    &amp;lt;/a&amp;gt;                &amp;lt;a class=&quot;editor-link&quot; href=&quot;cloudcannon:collections/_documentation/errors.md&quot;&amp;gt;Edit&amp;lt;/a&amp;gt;            &amp;lt;/h3&amp;gt;                                    &amp;lt;table&amp;gt;          Code      Name      Description                200      OK      Success              201      Created      Creation Successful              400      Bad Request      We could not process that action              403      Forbidden      We couldn’t authenticate you      &amp;lt;/table&amp;gt;All errors will return JSON in the following format:{  &quot;error&quot;: true,  &quot;message&quot;: &quot;error message here&quot;}        &amp;lt;/section&amp;gt;            &amp;lt;/section&amp;gt;    &amp;lt;section class=&quot;doc-content&quot;&amp;gt;        &amp;lt;section class=&quot;left-docs&quot;&amp;gt;            &amp;lt;h3&amp;gt;                &amp;lt;a id=&quot;apibooks_add&quot;&amp;gt;                    /info                                            &amp;lt;span class=&quot;endpoint get&quot;&amp;gt;&amp;lt;/span&amp;gt;                                    &amp;lt;/a&amp;gt;                &amp;lt;a class=&quot;editor-link&quot; href=&quot;cloudcannon:collections/_api/books_add.md&quot;&amp;gt;Edit&amp;lt;/a&amp;gt;            &amp;lt;/h3&amp;gt;                            &amp;lt;p class=&quot;description&quot;&amp;gt;Retrieve theme&amp;lt;/p&amp;gt;                                            &amp;lt;h6&amp;gt;Parameters&amp;lt;/h6&amp;gt;                    &amp;lt;dl&amp;gt;                                                                &amp;lt;dt&amp;gt;name&amp;lt;/dt&amp;gt;                                    &amp;lt;dd&amp;gt;The name of the university you wish to verify&amp;lt;/dd&amp;gt;                                                &amp;lt;/dl&amp;gt;                        &amp;lt;p class=&quot;info&quot;&amp;gt;Get the theme data (messages and CSS) for a program&amp;lt;/p&amp;gt;GET /rest/v2/info HTTP/1.1Authorization: Bearer &amp;lt;YOUR_API_TOKEN&amp;gt;curl -X GET    https://preview.sheerid.com/rest/v2/info    -H 'Content-Type: application/json'    -d '{    &quot;programId&quot;: &quot;YOUR_PROGRAM_ID&quot;  }'        &amp;lt;/section&amp;gt;                        &amp;lt;section class=&quot;right-code&quot;&amp;gt;{    &quot;sheeridVersion&quot;: &quot;1.3.23.a0c14d160a6de518591a19c75544bc0297a4da18-SNAPSHOT&quot;,    &quot;sheeridGitCommit&quot;: &quot;a0c14d160a6de518591a19c75544bc0297a4da18&quot;,    &quot;puppetGitCommit&quot;: &quot;df47102b39f033007a0647f2dcaa1a40bb609ff3-dirty&quot;,    &quot;buildTimestamp&quot;: &quot;2019-01-04T17:34:25Z&quot;}{  &quot;error&quot;: true,  &quot;message&quot;: &quot;Bad request&quot;}            &amp;lt;/section&amp;gt;            &amp;lt;/section&amp;gt;    &amp;lt;section class=&quot;doc-content&quot;&amp;gt;        &amp;lt;section class=&quot;left-docs&quot;&amp;gt;            &amp;lt;h3&amp;gt;                &amp;lt;a id=&quot;apibooks_list&quot;&amp;gt;                    /books                                            &amp;lt;span class=&quot;endpoint get&quot;&amp;gt;&amp;lt;/span&amp;gt;                                    &amp;lt;/a&amp;gt;                &amp;lt;a class=&quot;editor-link&quot; href=&quot;cloudcannon:collections/_api/books_list.md&quot;&amp;gt;Edit&amp;lt;/a&amp;gt;            &amp;lt;/h3&amp;gt;                            &amp;lt;p class=&quot;description&quot;&amp;gt;List all books&amp;lt;/p&amp;gt;                                            &amp;lt;h6&amp;gt;Parameters&amp;lt;/h6&amp;gt;                    &amp;lt;dl&amp;gt;                                                                &amp;lt;dt&amp;gt;offset&amp;lt;/dt&amp;gt;                                    &amp;lt;dd&amp;gt;Offset the results by this amount&amp;lt;/dd&amp;gt;                                                                &amp;lt;dt&amp;gt;limit&amp;lt;/dt&amp;gt;                                    &amp;lt;dd&amp;gt;Limit the number of books returned&amp;lt;/dd&amp;gt;                                                &amp;lt;/dl&amp;gt;                        &amp;lt;p class=&quot;info&quot;&amp;gt;This call will return a maximum of 100 books&amp;lt;/p&amp;gt;Lists all the photos you have access to. You can paginate by using the parameters listed above.$.get(&quot;http://api.myapp.com/books/&quot;, { &quot;token&quot;: &quot;YOUR_APP_KEY&quot;}, function(data) {  alert(data);});r = requests.get(&quot;http://api.myapp.com/books/&quot;, token=&quot;YOUR_APP_KEY&quot;)print r.textvar request = require(&quot;request&quot;);request(&quot;http://api.myapp.com/books?token=YOUR_APP_KEY&quot;, function (error, response, body) {if (!error &amp;amp;&amp;amp; response.statusCode == 200) {  console.log(body);}curl http://sampleapi.readme.com/orders?key=YOUR_APP_KEY        &amp;lt;/section&amp;gt;                        &amp;lt;section class=&quot;right-code&quot;&amp;gt;[  {    &quot;id&quot;: 1,    &quot;title&quot;: &quot;The Hunger Games&quot;,    &quot;score&quot;: 4.5,    &quot;dateAdded&quot;: &quot;12/12/2013&quot;  },  {    &quot;id&quot;: 1,    &quot;title&quot;: &quot;The Hunger Games&quot;,    &quot;score&quot;: 4.7,    &quot;dateAdded&quot;: &quot;15/12/2013&quot;  },]{  &quot;error&quot;: true,  &quot;message&quot;: &quot;Invalid offset&quot;}            &amp;lt;/section&amp;gt;            &amp;lt;/section&amp;gt;    &amp;lt;section class=&quot;doc-content&quot;&amp;gt;        &amp;lt;section class=&quot;left-docs&quot;&amp;gt;            &amp;lt;h3&amp;gt;                &amp;lt;a id=&quot;apibooks_get&quot;&amp;gt;                    /books/:id                                            &amp;lt;span class=&quot;endpoint get&quot;&amp;gt;&amp;lt;/span&amp;gt;                                    &amp;lt;/a&amp;gt;                &amp;lt;a class=&quot;editor-link&quot; href=&quot;cloudcannon:collections/_api/books_get.md&quot;&amp;gt;Edit&amp;lt;/a&amp;gt;            &amp;lt;/h3&amp;gt;                            &amp;lt;p class=&quot;description&quot;&amp;gt;Get Book&amp;lt;/p&amp;gt;                                    &amp;lt;p&amp;gt;Returns a specific book from your collection&amp;lt;/p&amp;gt;$.get(&quot;http://api.myapp.com/books/3&quot;, {  token: &quot;YOUR_APP_KEY&quot;,}, function(data) {  alert(data);});        &amp;lt;/section&amp;gt;                        &amp;lt;section class=&quot;right-code&quot;&amp;gt;{  &quot;id&quot;: 3,  &quot;title&quot;: &quot;The Book Thief&quot;,  &quot;score&quot;: 4.3,  &quot;dateAdded&quot;: &quot;5/1/2015&quot;}{  &quot;error&quot;: true,  &quot;message&quot;: &quot;Book doesn't exist&quot;}            &amp;lt;/section&amp;gt;            &amp;lt;/section&amp;gt;    &amp;lt;section class=&quot;doc-content&quot;&amp;gt;        &amp;lt;section class=&quot;left-docs&quot;&amp;gt;            &amp;lt;h3&amp;gt;                &amp;lt;a id=&quot;apibooks_update&quot;&amp;gt;                    /books/:id                                            &amp;lt;span class=&quot;endpoint put&quot;&amp;gt;&amp;lt;/span&amp;gt;                                    &amp;lt;/a&amp;gt;                &amp;lt;a class=&quot;editor-link&quot; href=&quot;cloudcannon:collections/_api/books_update.md&quot;&amp;gt;Edit&amp;lt;/a&amp;gt;            &amp;lt;/h3&amp;gt;                            &amp;lt;p class=&quot;description&quot;&amp;gt;Update Book&amp;lt;/p&amp;gt;                                            &amp;lt;h6&amp;gt;Parameters&amp;lt;/h6&amp;gt;                    &amp;lt;dl&amp;gt;                                                                &amp;lt;dt&amp;gt;title&amp;lt;/dt&amp;gt;                                    &amp;lt;dd&amp;gt;The title for the book&amp;lt;/dd&amp;gt;                                                                &amp;lt;dt&amp;gt;score&amp;lt;/dt&amp;gt;                                    &amp;lt;dd&amp;gt;The book's score between 0 and 5&amp;lt;/dd&amp;gt;                                                &amp;lt;/dl&amp;gt;                        &amp;lt;p&amp;gt;Update an existing book in your collection.&amp;lt;/p&amp;gt;$.ajax({  &quot;url&quot;: &quot;http://api.myapp.com/books/3&quot;,  &quot;type&quot;: &quot;PUT&quot;,  &quot;data&quot;: {    &quot;token&quot;: &quot;YOUR_APP_KEY&quot;,    &quot;score&quot;: 5.0,    &quot;title&quot;: &quot;The Book Stealer&quot;  },  &quot;success&quot;: function(data) {    alert(data);  }});        &amp;lt;/section&amp;gt;                        &amp;lt;section class=&quot;right-code&quot;&amp;gt;{  &quot;id&quot;: 3,  &quot;title&quot;: &quot;The Book Stealer&quot;,  &quot;score&quot;: 5,  &quot;dateAdded&quot;: &quot;5/1/2015&quot;}{  &quot;error&quot;: true,  &quot;message&quot;: &quot;Book doesn't exist&quot;}            &amp;lt;/section&amp;gt;            &amp;lt;/section&amp;gt;    &amp;lt;section class=&quot;doc-content&quot;&amp;gt;        &amp;lt;section class=&quot;left-docs&quot;&amp;gt;            &amp;lt;h3&amp;gt;                &amp;lt;a id=&quot;apibooks_delete&quot;&amp;gt;                    /books/:id                                            &amp;lt;span class=&quot;endpoint delete&quot;&amp;gt;&amp;lt;/span&amp;gt;                                    &amp;lt;/a&amp;gt;                &amp;lt;a class=&quot;editor-link&quot; href=&quot;cloudcannon:collections/_api/books_delete.md&quot;&amp;gt;Edit&amp;lt;/a&amp;gt;            &amp;lt;/h3&amp;gt;                            &amp;lt;p class=&quot;description&quot;&amp;gt;Deletes a book&amp;lt;/p&amp;gt;                                    &amp;lt;p&amp;gt;Deletes a book in your collection.&amp;lt;/p&amp;gt;$.ajax({  &quot;url&quot;: &quot;http://api.myapp.com/books/3&quot;,  &quot;type&quot;: &quot;DELETE&quot;,  &quot;data&quot;: {    &quot;token&quot;: &quot;YOUR_APP_KEY&quot;  },  &quot;success&quot;: function(data) {    alert(data);  }});        &amp;lt;/section&amp;gt;                        &amp;lt;section class=&quot;right-code&quot;&amp;gt;{  &quot;id&quot;: 3,  &quot;status&quot;: &quot;deleted&quot;}{  &quot;error&quot;: true,  &quot;message&quot;: &quot;Book doesn't exist&quot;}            &amp;lt;/section&amp;gt;            &amp;lt;/section&amp;gt;",
-    "url": "http://localhost:4000/api.html",
+    "url": "http://localhost:4000/jekyll-test/api.html",
     "relUrl": "/api.html"
   },
   "2": {
     "id": "2",
     "title": "REST API",
     "content": "API Overview  Base URL  Authentication  Errors          Recoverable Errors                  Messages          Example                    Non Recoverable Errors                  Messages          Example                    The SheerID API is organized around REST.Base URLhttps://preview.sheerid.com/rest/v2/AuthenticationRequests use bearer auth.GET /rest/v2/info HTTP/1.1Content-Type: application/jsonAuthorization: Bearer &amp;lt;YOUR_ACCESS_TOKEN&amp;gt;Get your access token from the SheerID web application under Settings »» Access Tokens.ErrorsAny response while interacting with the API could be an error response. There are two types of possible erros: one that can be recovered from and one that is fatal.Recoverable ErrorsA recoverable error will include the step the verification was on before the error occurred. So if I was attempting to submit a student subject for the collectStudentPersonalInfo step, I could receive this response:{    &quot;verificationId&quot;: &quot;111111111111111111111111&quot;, // Verification ID that should be used for all future calls    &quot;programConfig&quot;: {        // See program config docs for description of contents    },    &quot;currentStep&quot;: &quot;collectStudentPersonalInfo&quot;, // The step in the verification flow the current verification is on    &quot;errorIds&quot;: [        // The errors that occurred when attempting the step    ]}The errorIds will indicate what went wrong, but since the currentStep is not error it means the issue could be corrected. These errors occur when bad data wassupplied, e.g. an invalid birth date, invalid email, invalid organization, etc.MessagesRecoverable errors can be caused by invalid entries from the user, so the messaging that should be shown can be found in the program theme of the response that was returned. The messaging found in the errorId section of the messages should be appropriate to show users.ExampleWhen submitting a student subject for the collectStudentPersonalInfo step, I sent this request:{    &quot;firstName&quot;: &quot;First&quot;,    &quot;lastName&quot;: &quot;Last&quot;,    &quot;birthDate&quot;: &quot;1-1-1&quot;,    &quot;email&quot;: &quot;notValidEmail,com&quot;,    &quot;universityId&quot;: 1}And this is the response:{    &quot;verificationId&quot;: &quot;111111111111111111111111&quot;, // Verification ID that should be used for all future calls    &quot;currentStep&quot;: &quot;collectStudentPersonalInfo&quot;, // The step in the verification flow the current verification is on    &quot;errorIds&quot;: [        &quot;invalidBirthDate&quot;,        &quot;invalidEmail&quot;    ]}This lets me know I need to perform the collectStudentPersonalInfo step again, and I should find the invalidBirthDate and invalidEmail messages in the program theme to find the message I should display to the user.Non Recoverable ErrorsA non recoverable error will have error as the currentStep and will provide both a list of errorIds as well as a systemErrorMessage that can be used to determinewhat caused the failure to assist with debugging. An example error response would look like this:{    &quot;verificationId&quot;: &quot;111111111111111111111111&quot;, // Verification ID that should be used for all future calls    &quot;currentStep&quot;: &quot;error&quot;, // The step in the verification flow the current verification is on    &quot;errorIds&quot;: [        // The errors that occurred when attempting the step    ],    &quot;systemErrorMessage&quot;: &quot;Debugging message&quot; // A description of the cause for the error to aid with debugging}These errors occur when programs or verifications are not found, when internal SheerID errors occur, or when a step can not be completed for a non-user related reason.MessagesThe supplied errorIds can be used to look up the user facing messages in the program theme just like for recoverable errors, howeverthese can potentially be much more generic messages and difficult to understand. So to provide feedback for the integrator, the systemErrorMessage property can be usedto understand what went wrong. These messages are NOT intended to be displayed to users, they are only for the integrators benefit.ExampleWhen submitting a student subject for the collectStudentPersonalInfo step, I sent this request:{    &quot;firstName&quot;: &quot;First&quot;,    &quot;lastName&quot;: &quot;Last&quot;,    &quot;birthDate&quot;: &quot;1-1-1&quot;,    &quot;email&quot;: &quot;notValidEmail,com&quot;,    &quot;invalidKey&quot;: &quot;something&quot;}And this is the response:{    &quot;verificationId&quot;: &quot;111111111111111111111111&quot;, // Verification ID that should be used for all future calls    &quot;currentStep&quot;: &quot;error&quot;, // The step in the verification flow the current verification is on    &quot;errorIds&quot;: [        &quot;invalidRequest&quot;    ],    &quot;systemErrorMessage&quot;: &quot;Unexpected property 'invalidKey', expected one of: firstName, lastName, birthDate, email, universityId, metadata&quot;}This lets me know I need to change the structure of my student subject request, and I can look up the invalidRequest error in the program theme to find the message I can show to the user. The systemErrorMessage tells me I need to remove the invalidKey propertyand only use the provided allowed keys.",
-    "url": "http://localhost:4000/integration/api",
+    "url": "http://localhost:4000/jekyll-test/integration/api",
     "relUrl": "/integration/api"
   },
   "3": {
     "id": "3",
     "title": "Concepts",
     "content": "VerificationA verification is the successful outcome of the verification process, whichHow do verifications work?We partner with a number of data providersInstant VerificationAt the core of SheerID’s platform is the instant verification engine that accesses hundredsof authoritative data sources in real time, conducts fuzzy matching and delivers results withsub-second latency to ensure a seamless user experience. Instant verification is availableboth online and offline, as well as POS systems.Document ReviewIf an instant verification is not available, users can upload documentation to completethe process.StepsDepending on the segment type, blah.Collect InformationInstant VerificationDocument UploadPendingSuccessError",
-    "url": "http://localhost:4000/getting-started/concepts/",
+    "url": "http://localhost:4000/jekyll-test/getting-started/concepts/",
     "relUrl": "/getting-started/concepts/"
   },
   "4": {
     "id": "4",
     "title": "Create a custom form",
     "content": "Create a custom formYou can make your own stuff.",
-    "url": "http://localhost:4000/tutorials/custom-form",
+    "url": "http://localhost:4000/jekyll-test/tutorials/custom-form",
     "relUrl": "/tutorials/custom-form"
   },
   "5": {
     "id": "5",
     "title": "",
     "content": "&amp;lt;!DOCTYPE html&amp;gt;                SheerID | Entire Form        Please enable Javascript to view this content.    This is where your page content would be.            ",
-    "url": "http://localhost:4000/examples/entire-form.html",
+    "url": "http://localhost:4000/jekyll-test/examples/entire-form.html",
     "relUrl": "/examples/entire-form.html"
   },
   "6": {
     "id": "6",
     "title": "Flows",
     "content": "FlowsIt’s helpful to know how your customers might progress through a typical verification. We call this a “flow”.Each point in the flow is a step.Standard (Student)Includes an attempt at instant verification, with a fall-back to try and upload additional documentation.To test this flow, see test rulesInstant-OnlyComing SoonDoc-Upload-OnlyComing Soon",
-    "url": "http://localhost:4000/getting-started/concepts/flows",
+    "url": "http://localhost:4000/jekyll-test/getting-started/concepts/flows",
     "relUrl": "/getting-started/concepts/flows"
   },
   "7": {
     "id": "7",
     "title": "Getting Started",
-    "content": "Getting StartedLet’s do this. Note:This is my sample note. Success!yay! Warning:There may or may not be dragons in thar. Danger:This could be bad.",
-    "url": "http://localhost:4000/getting-started",
+    "content": "Getting StartedLet’s do this.",
+    "url": "http://localhost:4000/jekyll-test/getting-started",
     "relUrl": "/getting-started"
   },
   "8": {
     "id": "8",
     "title": "Glossary",
     "content": "Glossary Note:This page should maybe go under Reference?        test mode    &amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;When you're using the preview site for testing.        flows    &amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;the series of steps you take to complete a verification    ",
-    "url": "http://localhost:4000/glossary.html",
+    "url": "http://localhost:4000/jekyll-test/glossary.html",
     "relUrl": "/glossary.html"
   },
   "9": {
     "id": "9",
     "title": "Home",
     "content": "                                                                                               SheerID JavaScript Library                  Quickly integrate gated offer programs, e.g., student verification, with your website and ecommerce workflows.                          SheerID does lots of things. This is a secondary paragraph which explains in slight more detail what some of those things are.                                      Documentation                                Quickstart                                    Version 2.0                              Import    Create Program    Use our self-service app to create your first verification program.npm install sheeridgem install sheerid -v         Create your first program            Download    Install    Get started quickly with our drop-in code to render your first form.Add styles&amp;lt;link rel=&quot;stylesheet&quot; href=&quot;https://preview.sheerid.com/docs/sheerid.css&quot; type=&quot;text/css&quot; /&amp;gt;JavaScript Library&amp;lt;script src=&quot;https://preview.sheerid.com/docs/sheerid.js&quot;&amp;gt;&amp;lt;/script&amp;gt;        Install the JS Library            Menu    Customize          Customize stuff                Customize your forms  ",
-    "url": "http://localhost:4000/",
+    "url": "http://localhost:4000/jekyll-test/",
     "relUrl": "/"
   },
   "10": {
     "id": "10",
     "title": "Reference",
     "content": "Reference      API Reference        SDK Reference        Swagger spec        Flow diagrams        Glossary  ",
-    "url": "http://localhost:4000/reference",
+    "url": "http://localhost:4000/jekyll-test/reference",
     "relUrl": "/reference"
   },
   "11": {
     "id": "11",
     "title": "Integration",
-    "content": "IntegrationIntegrating SheerID verification into your site            interface      Drop-in form      UI Components      REST Client      Verification      Manage      Reporting                  JS Library      •      •      •      •                            REST API                           •      •      •              mysheerid.com      •                           •      •      SheerID lets you instantly verify your customers’ eligibility for segment-specific offers. See your conversion rates soar.Get started now CustomizeREST APIWhy gated offers?Gated offers increase your revenue by 40%!How does it even work?It’s a simple process!  Create a SheerID account and generate a new offer program.  Add some code to your website to capture user input.  Profit Note:You can also customize this for your brand. See [link] for more details.",
-    "url": "http://localhost:4000/integration",
+    "content": "IntegrationIntegrating SheerID verification into your site            interface      Drop-in form      UI Components      REST Client      Verification      Manage      Reporting                  JS Library      •      •      •      •                            REST API                           •      •      •              mysheerid.com      •                           •      •      SheerID lets you instantly verify your customers’ eligibility for segment-specific offers. See your conversion rates soar.Get started now CustomizeREST APIWhy gated offers?Gated offers increase your revenue by 40%!How does it even work?It’s a simple process!  Create a SheerID account and generate a new offer program.  Add some code to your website to capture user input.  Profit",
+    "url": "http://localhost:4000/jekyll-test/integration",
     "relUrl": "/integration"
   },
   "12": {
     "id": "12",
     "title": "Internationalization",
     "content": "Internationalization (i18n)We offer language for your verification form in a layered approach. The layers are:  SheerID default messages  Per-program (overrides “default”)  Javascript Library (overrides “per-program” and “default”)SheerID default messagesAll of the words and phrases shown in our verification flows are offered in a variety of languages. You can see which messages are available in the REST API reference.Per-program overridesCertain phrases can be customized in by editing your program in the self-service tool, using the Customize Experience step.Javascript Library overridesYou may specify messages when initializing your form using the setOptions method in Javscript.&amp;lt;script&amp;gt;sheerId.setOptions({    messages: {        'step.collectStudentPersonalInfo.title': 'Verify (js options override)'    }});&amp;lt;/script&amp;gt;Note that all messages objects are flattened, so you can use a dot-string property or full objects:&amp;lt;script&amp;gt;sheerId.setOptions({    messages: {        // dot-string works        'step.collectStudentPersonalInfo.title': 'Verify (js options override)',                // object works too!        step: {            collectStudentPersonalInfo: {                subtitle: 'Verify Subtitle (js)',            }        }    }});&amp;lt;/script&amp;gt;See a live example here",
-    "url": "http://localhost:4000/integration/sdk/internationalization",
+    "url": "http://localhost:4000/jekyll-test/integration/sdk/internationalization",
     "relUrl": "/integration/sdk/internationalization"
   },
   "13": {
     "id": "13",
     "title": "Program Config",
     "content": "Program ThemeThe program theme object contains all theme and messaging information that was configured for a program in the self service tool. This includes a full CSS stylesheetthat can be included when rendering the form (as long as CSS selectors match), and any messaging that should be used throughout the verification process, includingfield labels, success messages, etc.Internationalization (i18n)The program theme contains an intl property which is a structured JSON object containing translated messaging to use when rendering the forms to collect the datanecessary for the verification flow. This will also include custom messaging that was configured in the self service tool.ErrorIdThe errorId property under the intl property can be used to find error messaging to display to users when a given error is thrown. Any time a response has an errorIds property, it means an error occurred and appropriate messaging should be looked up here in the program theme based on the error ID that was returned.Custom CSSThe customCss property on the program theme contains a CSS stylesheet as it was configured in the self service tool. This is heavily reliant on certain selectorsexisting on the page, so it may or may not be useful when not using the JS client.",
-    "url": "http://localhost:4000/integration/api/program-config",
+    "url": "http://localhost:4000/jekyll-test/integration/api/program-config",
     "relUrl": "/integration/api/program-config"
   },
   "14": {
     "id": "14",
     "title": "Manage Programs",
     "content": "Manage ProgramsSheerID offers an easy-to-use, self-service application that allowsyou to select your target audience segment, compose your offer,and measure results—all within one interface. This document providesa step-by-step walkthrough of how to set up and optimize theperformance of your exclusive offer programs.  Getting Started  Programs  Complete Your First Program          Install        Reporting  Settings          Account      Users      Access Tokens      Getting StartedThe first step is to create a SheerID user account.Programs  Create a New Program  Customize Your Program  Choose Code Type  Name ProgramComplete Your First Program  Viewing and Managing Your Existing ProgramsInstallCopy and paste the code snippet into your website&amp;lt;a data-sheerid-iframe=&quot;true&quot; href=&quot;https://preview.sheerid.com/verify/5c0d45f251cc4d31b7a222ca/&quot;&amp;gt;Confirm Eligibility&amp;lt;/a&amp;gt; &amp;lt;script src=&quot;https://services-sandbox.sheerid.com/jsapi/SheerID.js&quot;&amp;gt;&amp;lt;/script&amp;gt; &amp;lt;script&amp;gt; SheerID.setBaseUrl(&quot;https://services-sandbox.sheerid.com/jsapi&quot;); SheerID.load('iframe', '1.2', { config : { lightbox: true, mobileRedirect: false, mobileThreshold: 600, top: '25px', closeBtnRight: '25px' } }); &amp;lt;/script&amp;gt;  Requesting Go Live on a ProgramReporting  Dashboard  Extended Reporting  Customer Search ToolSettings  Inviting New Users  API Access KeysAccountUsersAccess TokensIn order to generate the Access Tokens tab, you must first have API access granted to youby an admin for your company.",
-    "url": "http://localhost:4000/integration/programs",
+    "url": "http://localhost:4000/jekyll-test/integration/programs",
     "relUrl": "/integration/programs"
   },
   "15": {
     "id": "15",
-    "title": "Quickstart",
-    "content": "QuickstartIn this quickstart you will:  Create a test verification program at trial-preview.sheerid.com.  Install our JavaScript library and render a verification form for your test program.  Simulate successful and failed outcomes for two verification steps: 1) Collectinga student’s personal information and 2) Document upload. Note:You can edit styles either directly on your site via css or via the web UI which passes the styles to your form, assuming you are using the custom one.Create a Verification ProgramLet’s begin by creating a program at trial-preview.sheerid.com. Programs created at the trial-preview site are in test modeand do not access our production databases. We provide test rules to simulate successfuland failed outcomes in the verification workflow.To test the flow, you can use the following rules:Test collectStudentPersonalInfo step  Use an even birth year to simulate instant success.  Use an odd birth year to simulate instant failure.Test docUpload stepAfter simulating instant failure (see above), you can simulate outcomes for the docUpload step as well.  Upload a file with the name SandboxTesting-ACCEPTED.png to simulate a review with a successful outcome.          Download SandboxTesting-ACCEPTED.png        Upload a file with the name SandboxTesting-REJECTED.png to simulate a review with a rejected outcome.          Download SandboxTesting-REJECTED.png      InstallationAdd css to the &amp;lt;head&amp;gt; of your html file.&amp;lt;link rel=&quot;stylesheet&quot; href=&quot;https://preview.sheerid.com/docs/sheerid.css&quot; type=&quot;text/css&quot; /&amp;gt;Add the SheerID js library in the &amp;lt;body&amp;gt;.&amp;lt;script src=&quot;https://preview.sheerid.com/docs/sheerid.js&quot;&amp;gt;&amp;lt;/script&amp;gt;Render the verification form in a div.&amp;lt;div id=&quot;my-form&quot;&amp;gt;&amp;lt;/div&amp;gt;&amp;lt;script&amp;gt;    var sheerid = window.sheerid;    sheerId.setOptions({logLevel: 'info'});    // Create a program at trial-preview.sheerid.com    var myProgramId = '5bbd127d9781852f68e14ddc';    var myDiv = document.getElementById('my-form');    var myForm = new sheerId.VerificationForm(myDiv, myProgramId);&amp;lt;/script&amp;gt;How to find my program’s id",
-    "url": "http://localhost:4000/getting-started/quickstart",
-    "relUrl": "/getting-started/quickstart"
+    "title": "API Quickstart",
+    "content": "API Quickstart[Make sure you have your program ID before starting]Retrive Theme (Optional)If you would like to use the CSS and messaging that was configured in the self-service tool, then you will need to first fetch the program theme. To do this, make a GET request to https://preview.sheerid.com/rest/v2/program/{programId}/theme. See the program theme docs for more information about what is contained in that payload.{    &quot;intl&quot;: {        &quot;locale&quot;: &quot;en-US&quot;,        &quot;messages&quot;: {            &quot;errorId&quot;: {                &quot;internalServerError&quot;: &quot;Internal server error&quot;,                &quot;noProgram&quot;: &quot;No program found&quot;,                &quot;noVerification&quot;: &quot;No verification found&quot;,                &quot;invalidProgram&quot;: &quot;Invalid program&quot;,                &quot;invalidStep&quot;: &quot;Invalid step&quot;,                &quot;invalidOrganizationId&quot;: &quot;Invalid organization&quot;,                &quot;invalidFirstName&quot;: &quot;Invalid first name&quot;,                &quot;invalidLastName&quot;: &quot;Invalid last name&quot;,                &quot;invalidBirthDate&quot;: &quot;Invalid birthdate&quot;,                &quot;invalidEmail&quot;: &quot;Invalid email&quot;,                &quot;underagePerson&quot;: &quot;Underage&quot;,                &quot;outsideAgePerson&quot;: &quot;Age outside allowed range&quot;,                &quot;futureBirthDate&quot;: &quot;Future birthdate&quot;,                &quot;unsupportedDocMimeType&quot;: &quot;One or more files is an unsupported format&quot;,                &quot;invalidFileSizeEmpty&quot;: &quot;One or more files is empty&quot;,                &quot;invalidFileSizeMax&quot;: &quot;One or more files is too large (max: 10MB)&quot;,                &quot;invalidNumberOfFiles&quot;: &quot;Maximum number of files exceeded (max: 5)&quot;,                &quot;invalidDocUploadToken&quot;: &quot;Provided document upload token is not valid&quot;,                &quot;verificationLimitExceeded&quot;: &quot;Verification limit exceeded&quot;,                &quot;docReviewLimitExceeded&quot;: &quot;Document review limit exceeded&quot;,                &quot;maxMetadataValuesExceeded&quot;: &quot;Maximum number of metadata values exceeded&quot;,                &quot;maxMetadataLengthExceeded&quot;: &quot;Maximum length of metadata value exceeded&quot;,                &quot;unknownError&quot;: &quot;Unknown Error&quot;,                &quot;invalidRequest&quot;: &quot;Invalid request&quot;            },            &quot;dateTime&quot;: {                &quot;january&quot;: &quot;January&quot;,                &quot;february&quot;: &quot;February&quot;,                &quot;march&quot;: &quot;March&quot;,                &quot;april&quot;: &quot;April&quot;,                &quot;may&quot;: &quot;May&quot;,                &quot;june&quot;: &quot;June&quot;,                &quot;july&quot;: &quot;July&quot;,                &quot;august&quot;: &quot;August&quot;,                &quot;september&quot;: &quot;September&quot;,                &quot;october&quot;: &quot;October&quot;,                &quot;november&quot;: &quot;November&quot;,                &quot;december&quot;: &quot;December&quot;,                &quot;month&quot;: &quot;Month&quot;,                &quot;day&quot;: &quot;Day&quot;,                &quot;year&quot;: &quot;Year&quot;            },            &quot;schoolName&quot;: &quot;School Name&quot;,            &quot;error&quot;: &quot;Error&quot;,            &quot;sheerIdFaqs&quot;: &quot;SheerID FAQs&quot;,            &quot;poweredBy&quot;: &quot;Verification services powered by SheerID&quot;,            &quot;personalInformation&quot;: &quot;Personal Information&quot;,            &quot;birthDate&quot;: &quot;Birth Date&quot;,            &quot;school&quot;: &quot;School&quot;,            &quot;verifyAndContinue&quot;: &quot;Verify and continue&quot;,            &quot;studentInfoShared&quot;: &quot;Information entered into this web form will be used for verification purposes. The information will be shared with Students.com.&quot;,            &quot;requiredFields&quot;: &quot;All fields are required&quot;,            &quot;step&quot;: {                &quot;collectStudentPersonalInfo&quot;: {                    &quot;subtitle&quot;: &quot;Confirm your eligibility by simply completing the form below.&quot;,                    &quot;title&quot;: &quot;Verify your details&quot;,                    &quot;formTitle&quot;: &quot;Personal information&quot;                },                &quot;docUpload&quot;: {                    &quot;acceptedTypes&quot;: &quot;Acceptable file types: png, gif, jpg, bmp, pdf&quot;,                    &quot;title&quot;: &quot;Documentation Needed&quot;,                    &quot;subtitle&quot;: &quot;Please upload a document that clearly shows your first name, last name, valid dates and/or status.&quot;,                    &quot;footer&quot;: &quot;Please omit, cover up or black out any sensitive information such as Social Security Number, bank information, etc.&quot;,                    &quot;submitButtonLabel&quot;: &quot;Continue&quot;                },                &quot;pending&quot;: {                    &quot;subtitle&quot;: &quot;The review process has now started. You will be contacted via email in less than 20 minutes with details regarding your verification request.&quot;,                    &quot;title&quot;: &quot;Under Review&quot;,                    &quot;subtitle2&quot;: &quot;NOTE: If you do not receive an email within the time shown above, you may want to check your junk/spam folder for the message.&quot;                },                &quot;success&quot;: {                    &quot;title&quot;: &quot;Congratulations!&quot;,                    &quot;subtitle&quot;: &quot;Your status has been verified.&quot;                }            }        }    },    &quot;customCss&quot;: &quot;/*  n n********************** nATTENTION - This configuration is written by sheerid-web-apps, my.sheerid.com n********************** n n */ n        /* The following code is customer provided */ n         n        .sid-text-input { n background: pink;  n} n n         n        &quot;}Retrieve Verification SegmentNow we need to begin a verification. This will retrieve what kind of segment you will be verifying against (Student, Active Military, Inactive Military, Teacher, etc.).To retrieve the initial step for your flow, make the following POST request:URL: https://preview.sheerid.com/rest/v2/verificationRequest Body:{    &quot;programId&quot;: &quot;YOUR PROGRAM ID HERE&quot;}Response:{    &quot;verificationId&quot;: &quot;111111111111111111111111&quot;, // Verification ID that should be used for all future calls    &quot;currentStep&quot;: &quot;collectStudentPersonalInfo&quot;, // The step in the verification flow the current verification is on    &quot;submissionUrl&quot;: &quot;https://preview.sheerid.com/rest/v2/verification/111111111111111111111111/step/collectStudentPersonalInfo&quot; // The URL to hit for the current step}At this point a verification has begun and can be referenced with the verificationId, in the example case 111111111111111111111111. This ID will be used for allfuture interactions with this verification ID.Verify a UserNow that we have our step (in our demo case we are verifying a student, so our step is collectStudentPersonalInfo), we can submit a verification subject to verify. We will be submitting a student for verification, so we will need to fill out this structure:{    &quot;firstName&quot;: &quot;&quot;,    &quot;lastName&quot;: &quot;&quot;,    &quot;email&quot;: &quot;&quot;,    &quot;birthDate&quot;: &quot;YYYY-MM-DD&quot;,    &quot;universityId&quot;: 0}Schemas for all verification subjects can be found hereOnce all data has been collected, make a POST call to the URL collected in the previous step’s submissionUrl response with the data, e.g.{    &quot;firstName&quot;: &quot;First&quot;,    &quot;lastName&quot;: &quot;Last&quot;,    &quot;email&quot;: &quot;demo@sheerid.com&quot;,    &quot;birthDate&quot;: &quot;1980-01-01&quot;,    &quot;universityId&quot;: 1}This example will cause an instant success response because it uses an even birth year. To see comprehensive testing rules, see the test rules documentations.SuccessIf the verification was successful, then you will receive a response like this:{    &quot;verificationId&quot;: &quot;111111111111111111111111&quot;, // Verification ID that should be used for all future calls    &quot;currentStep&quot;: &quot;success&quot;, // The step in the verification flow the current verification is on    &quot;rewardCode&quot;: &quot;REWARD&quot; // The reward code that was configured in the self service tool}After providing the rewardCode to your user to be used in your system, you’re done!Document ReviewIf the verification was unsuccessful, then you will need to collect document(s) that prove the user is part of the verification segment to be provided to SheerID for review. The document review response will be returned after submitting the personal info of the user if the user could not be verified instantly, and will look something like this:{    &quot;verificationId&quot;: &quot;111111111111111111111111&quot;, // Verification ID that should be used for all future calls    &quot;currentStep&quot;: &quot;docUpload&quot;, // The step in the verification flow the current verification is on    &quot;submissionUrl&quot;: &quot;https://preview.sheerid.com/rest/v2/verification/111111111111111111111111/step/docUpload/1234&quot; // The URL to hit for the current step}After collecting the documents, they should be submitted to SheerID by making a POST request to the submissionUrl provided in the doc upload response. This request must use the multipart/form-data Content-Type header, and should specify each file with a key beginning with file e.g.file1=first file...file2=second file...file3=third file...Once all files have been submitted, you will receive a pending response.PendingIf documents have been successfully uploaded to SheerID for review, then you will receive a response that looks like this:{    &quot;verificationId&quot;: &quot;111111111111111111111111&quot;, // Verification ID that should be used for all future calls    &quot;currentStep&quot;: &quot;pending&quot;, // The step in the verification flow the current verification is on    &quot;statusUrl&quot;: &quot;https://preview.sheerid.com/rest/v2/verification/111111111111111111111111&quot; // The URL to poll for current status}The statusUrl is the URL used to retrieve the current status of the verification. This endpoint can be polled to watch for changes to the verification state. If a document review is completeled and marked successful (the document proved the user was associated with the segment), then you will receive the success response. If the document review was marked rejected (the document did not prove the user was associated with the segment), the you will receive the docUpload response so the user has a change to upload different documentation. The user has a limited number of times they can perform this operation. If the document review is still in progress, you will continue to get the pending response.Getting Current StatusThe current status of a verification can be retrieved at any time by making a GET request to https://preview.sheerid.com/rest/v2/verification/{verificationId}. The response from this endpoint will match the responses you get a various points through the flow (success, docUpload, pending, error, etc.). This endpoint can be used to continue a verificaiton that was halted at any point.ErrorsTo see detailed descriptions of errors that could occur during the verification flow, see the errors documentation.",
+    "url": "http://localhost:4000/jekyll-test/integration/api/quickstart",
+    "relUrl": "/integration/api/quickstart"
   },
   "16": {
     "id": "16",
-    "title": "API Quickstart",
-    "content": "API Quickstart[Make sure you have your program ID before starting]A Program can be created at trial-preview.sheerid.comYou can find the programId on your program’s install page.Retrive Theme (Optional)If you would like to use the CSS and messaging that was configured in the self-service tool, then you will need to first fetch the program theme. To do this, make a GET request to https://preview.sheerid.com/rest/v2/program/{programId}/theme. See the program theme docs for more information about what is contained in that payload.{    &quot;intl&quot;: {        &quot;locale&quot;: &quot;en-US&quot;,        &quot;messages&quot;: {            &quot;errorId&quot;: {                &quot;internalServerError&quot;: &quot;Internal server error&quot;,                &quot;noProgram&quot;: &quot;No program found&quot;,                &quot;noVerification&quot;: &quot;No verification found&quot;,                &quot;invalidProgram&quot;: &quot;Invalid program&quot;,                &quot;invalidStep&quot;: &quot;Invalid step&quot;,                &quot;invalidOrganizationId&quot;: &quot;Invalid organization&quot;,                &quot;invalidFirstName&quot;: &quot;Invalid first name&quot;,                &quot;invalidLastName&quot;: &quot;Invalid last name&quot;,                &quot;invalidBirthDate&quot;: &quot;Invalid birthdate&quot;,                &quot;invalidEmail&quot;: &quot;Invalid email&quot;,                &quot;underagePerson&quot;: &quot;Underage&quot;,                &quot;outsideAgePerson&quot;: &quot;Age outside allowed range&quot;,                &quot;futureBirthDate&quot;: &quot;Future birthdate&quot;,                &quot;unsupportedDocMimeType&quot;: &quot;One or more files is an unsupported format&quot;,                &quot;invalidFileSizeEmpty&quot;: &quot;One or more files is empty&quot;,                &quot;invalidFileSizeMax&quot;: &quot;One or more files is too large (max: 10MB)&quot;,                &quot;invalidNumberOfFiles&quot;: &quot;Maximum number of files exceeded (max: 5)&quot;,                &quot;invalidDocUploadToken&quot;: &quot;Provided document upload token is not valid&quot;,                &quot;verificationLimitExceeded&quot;: &quot;Verification limit exceeded&quot;,                &quot;docReviewLimitExceeded&quot;: &quot;Document review limit exceeded&quot;,                &quot;maxMetadataValuesExceeded&quot;: &quot;Maximum number of metadata values exceeded&quot;,                &quot;maxMetadataLengthExceeded&quot;: &quot;Maximum length of metadata value exceeded&quot;,                &quot;unknownError&quot;: &quot;Unknown Error&quot;,                &quot;invalidRequest&quot;: &quot;Invalid request&quot;            },            &quot;dateTime&quot;: {                &quot;january&quot;: &quot;January&quot;,                &quot;february&quot;: &quot;February&quot;,                &quot;march&quot;: &quot;March&quot;,                &quot;april&quot;: &quot;April&quot;,                &quot;may&quot;: &quot;May&quot;,                &quot;june&quot;: &quot;June&quot;,                &quot;july&quot;: &quot;July&quot;,                &quot;august&quot;: &quot;August&quot;,                &quot;september&quot;: &quot;September&quot;,                &quot;october&quot;: &quot;October&quot;,                &quot;november&quot;: &quot;November&quot;,                &quot;december&quot;: &quot;December&quot;,                &quot;month&quot;: &quot;Month&quot;,                &quot;day&quot;: &quot;Day&quot;,                &quot;year&quot;: &quot;Year&quot;            },            &quot;schoolName&quot;: &quot;School Name&quot;,            &quot;error&quot;: &quot;Error&quot;,            &quot;sheerIdFaqs&quot;: &quot;SheerID FAQs&quot;,            &quot;poweredBy&quot;: &quot;Verification services powered by SheerID&quot;,            &quot;personalInformation&quot;: &quot;Personal Information&quot;,            &quot;birthDate&quot;: &quot;Birth Date&quot;,            &quot;school&quot;: &quot;School&quot;,            &quot;verifyAndContinue&quot;: &quot;Verify and continue&quot;,            &quot;studentInfoShared&quot;: &quot;Information entered into this web form will be used for verification purposes. The information will be shared with Students.com.&quot;,            &quot;requiredFields&quot;: &quot;All fields are required&quot;,            &quot;step&quot;: {                &quot;collectStudentPersonalInfo&quot;: {                    &quot;subtitle&quot;: &quot;Confirm your eligibility by simply completing the form below.&quot;,                    &quot;title&quot;: &quot;Verify your details&quot;,                    &quot;formTitle&quot;: &quot;Personal information&quot;                },                &quot;docUpload&quot;: {                    &quot;acceptedTypes&quot;: &quot;Acceptable file types: png, gif, jpg, bmp, pdf&quot;,                    &quot;title&quot;: &quot;Documentation Needed&quot;,                    &quot;subtitle&quot;: &quot;Please upload a document that clearly shows your first name, last name, valid dates and/or status.&quot;,                    &quot;footer&quot;: &quot;Please omit, cover up or black out any sensitive information such as Social Security Number, bank information, etc.&quot;,                    &quot;submitButtonLabel&quot;: &quot;Continue&quot;                },                &quot;pending&quot;: {                    &quot;subtitle&quot;: &quot;The review process has now started. You will be contacted via email in less than 20 minutes with details regarding your verification request.&quot;,                    &quot;title&quot;: &quot;Under Review&quot;,                    &quot;subtitle2&quot;: &quot;NOTE: If you do not receive an email within the time shown above, you may want to check your junk/spam folder for the message.&quot;                },                &quot;success&quot;: {                    &quot;title&quot;: &quot;Congratulations!&quot;,                    &quot;subtitle&quot;: &quot;Your status has been verified.&quot;                }            }        }    },    &quot;customCss&quot;: &quot;/*  n n********************** nATTENTION - This configuration is written by sheerid-web-apps, my.sheerid.com n********************** n n */ n        /* The following code is customer provided */ n         n        .sid-text-input { n background: pink;  n} n n         n        &quot;}Retrieve Verification SegmentNow we need to begin a verification. This will retrieve what kind of segment you will be verifying against (Student, Active Military, Inactive Military, Teacher, etc.).To retrieve the initial step for your flow, make the following POST request:URL: https://preview.sheerid.com/rest/v2/verificationRequest Body:{    &quot;programId&quot;: &quot;YOUR PROGRAM ID HERE&quot;}Response:{    &quot;verificationId&quot;: &quot;111111111111111111111111&quot;, // Verification ID that should be used for all future calls    &quot;currentStep&quot;: &quot;collectStudentPersonalInfo&quot;, // The step in the verification flow the current verification is on    &quot;submissionUrl&quot;: &quot;https://preview.sheerid.com/rest/v2/verification/111111111111111111111111/step/collectStudentPersonalInfo&quot; // The URL to hit for the current step}At this point a verification has begun and can be referenced with the verificationId, in the example case 111111111111111111111111. This ID will be used for allfuture interactions with this verification ID.Verify a UserNow that we have our step (in our demo case we are verifying a student, so our step is collectStudentPersonalInfo), we can submit a verification subject to verify. We will be submitting a student for verification, so we will need to fill out this structure:{    &quot;firstName&quot;: &quot;&quot;,    &quot;lastName&quot;: &quot;&quot;,    &quot;email&quot;: &quot;&quot;,    &quot;birthDate&quot;: &quot;YYYY-MM-DD&quot;,    &quot;universityId&quot;: 0}Schemas for all verification subjects can be found hereOnce all data has been collected, make a POST call to the URL collected in the previous step’s submissionUrl response with the data, e.g.{    &quot;firstName&quot;: &quot;First&quot;,    &quot;lastName&quot;: &quot;Last&quot;,    &quot;email&quot;: &quot;demo@sheerid.com&quot;,    &quot;birthDate&quot;: &quot;1980-01-01&quot;,    &quot;universityId&quot;: 1}This example will cause an instant success response because it uses an even birth year. To see comprehensive testing rules, see the test rules documentations.SuccessIf the verification was successful, then you will receive a response like this:{    &quot;verificationId&quot;: &quot;111111111111111111111111&quot;, // Verification ID that should be used for all future calls    &quot;currentStep&quot;: &quot;success&quot;, // The step in the verification flow the current verification is on    &quot;rewardCode&quot;: &quot;REWARD&quot; // The reward code that was configured in the self service tool}After providing the rewardCode to your user to be used in your system, you’re done!Document ReviewIf the verification was unsuccessful, then you will need to collect document(s) that prove the user is part of the verification segment to be provided to SheerID for review. The document review response will be returned after submitting the personal info of the user if the user could not be verified instantly, and will look something like this:{    &quot;verificationId&quot;: &quot;111111111111111111111111&quot;, // Verification ID that should be used for all future calls    &quot;currentStep&quot;: &quot;docUpload&quot;, // The step in the verification flow the current verification is on    &quot;submissionUrl&quot;: &quot;https://preview.sheerid.com/rest/v2/verification/111111111111111111111111/step/docUpload/1234&quot; // The URL to hit for the current step}After collecting the documents, they should be submitted to SheerID by making a POST request to the submissionUrl provided in the doc upload response. This request must use the multipart/form-data Content-Type header, and should specify each file with a key beginning with file e.g.file1=first file...file2=second file...file3=third file...Once all files have been submitted, you will receive a pending response.PendingIf documents have been successfully uploaded to SheerID for review, then you will receive a response that looks like this:{    &quot;verificationId&quot;: &quot;111111111111111111111111&quot;, // Verification ID that should be used for all future calls    &quot;currentStep&quot;: &quot;pending&quot;, // The step in the verification flow the current verification is on    &quot;statusUrl&quot;: &quot;https://preview.sheerid.com/rest/v2/verification/111111111111111111111111&quot; // The URL to poll for current status}The statusUrl is the URL used to retrieve the current status of the verification. This endpoint can be polled to watch for changes to the verification state. If a document review is completeled and marked successful (the document proved the user was associated with the segment), then you will receive the success response. If the document review was marked rejected (the document did not prove the user was associated with the segment), the you will receive the docUpload response so the user has a change to upload different documentation. The user has a limited number of times they can perform this operation. If the document review is still in progress, you will continue to get the pending response.Getting Current StatusThe current status of a verification can be retrieved at any time by making a GET request to https://preview.sheerid.com/rest/v2/verification/{verificationId}. The response from this endpoint will match the responses you get a various points through the flow (success, docUpload, pending, error, etc.). This endpoint can be used to continue a verificaiton that was halted at any point.ErrorsTo see detailed descriptions of errors that could occur during the verification flow, see the errors documentation.",
-    "url": "http://localhost:4000/integration/api/quickstart",
-    "relUrl": "/integration/api/quickstart"
+    "title": "Quickstart",
+    "content": "QuickstartIn this quickstart you will:  Create a test verification program at trial-preview.sheerid.com.  Install our JavaScript library and render a verification form for your test program.  Simulate successful and failed outcomes for two verification steps: 1) Collectinga student’s personal information and 2) Document upload. Note:You can edit styles either directly on your site via css or via the web UI which passes the styles to your form, assuming you are using the custom one.Create a Verification ProgramLet’s begin by creating a program at trial-preview.sheerid.com. Programs created at the trial-preview site are in test modeand do not access our production databases. We provide test rules to simulate successfuland failed outcomes in the verification workflow.To test the flow, you can use the following rules:Test collectStudentPersonalInfo step  Use an even birth year to simulate instant success.  Use an odd birth year to simulate instant failure.Test docUpload stepAfter simulating instant failure (see above), you can simulate outcomes for the docUpload step as well.  Upload a file with the name SandboxTesting-ACCEPTED.png to simulate a review with a successful outcome.          Download SandboxTesting-ACCEPTED.png        Upload a file with the name SandboxTesting-REJECTED.png to simulate a review with a rejected outcome.          Download SandboxTesting-REJECTED.png      InstallationAdd css to the &amp;lt;head&amp;gt; of your html file.&amp;lt;link rel=&quot;stylesheet&quot; href=&quot;https://preview.sheerid.com/docs/sheerid.css&quot; type=&quot;text/css&quot; /&amp;gt;Add the SheerID js library in the &amp;lt;body&amp;gt;.&amp;lt;script src=&quot;https://preview.sheerid.com/docs/sheerid.js&quot;&amp;gt;&amp;lt;/script&amp;gt;Render the verification form in a div.&amp;lt;div id=&quot;my-form&quot;&amp;gt;&amp;lt;/div&amp;gt;&amp;lt;script&amp;gt;    var sheerid = window.sheerid;    sheerId.setOptions({logLevel: 'info'});    // Create a program at trial-preview.sheerid.com    var myProgramId = '5bbd127d9781852f68e14ddc';    var myDiv = document.getElementById('my-form');    var myForm = new sheerId.VerificationForm(myDiv, myProgramId);&amp;lt;/script&amp;gt;How to find my program’s id",
+    "url": "http://localhost:4000/jekyll-test/getting-started/quickstart",
+    "relUrl": "/getting-started/quickstart"
   },
   "17": {
     "id": "17",
     "title": "Reporting",
     "content": "ReportingWe collect data and provide reporting via our dashboard UI and our REST API.DashboardREST API",
-    "url": "http://localhost:4000/reporting",
+    "url": "http://localhost:4000/jekyll-test/reporting",
     "relUrl": "/reporting"
   },
   "18": {
     "id": "18",
     "title": "JavaScript SDK",
     "content": "SheerID JavaScript LibraryIntegrating SheerID verification forms into your site comes in 3 forms:Easy IntermediateAdvancedEasyEasyMyStore.html&amp;lt;script&amp;gt;var myForm = new sheerID.VerificationForm(    document.getElementById('my-form'),    '5bbd127d9781852f68e14ddc'    );&amp;lt;/script&amp;gt;IntermediateIntermediateYou can use your own forms and scripts to gather user information, and call the SheerID functions directly, and handle responsesdirectly using our REST API.MyStore.html&amp;lt;script&amp;gt;// This object is built with MyStore's forms/scripts:var formData = {    firstName: 'John',    lastName: 'Doe',    email: 'j@d.com',    birthDate: '2000-01-01',    universityId: 231}sheerid.submitVerification(formData)    .then(response =&amp;gt; {        MyStore.handleResponse(response);    });&amp;lt;/script&amp;gt;AdvancedAdvancedOr you can use a combination of the two.&amp;lt;div id=&quot;my-form&quot;&amp;gt;    &amp;lt;div id=&quot;my-fields&quot;&amp;gt;        &amp;lt;input type=&quot;text&quot; name=&quot;firstName&quot; /&amp;gt;    &amp;lt;/div&amp;gt;    &amp;lt;div id= &quot;sheerid-fields&quot;&amp;gt;&amp;lt;!-- Built with JS --&amp;gt;&amp;lt;/div&amp;gt;&amp;lt;/div&amp;gt;&amp;lt;script&amp;gt;    var currentChoice = 3;    function onChange( newChoice ) {        myStore.handleNewChoice(newChoice);    }sheerid.renderFormFieldUniversity('#sheerid-fields', currentChoice, onChange);sheerid.submitVerification(formData)    .then(response =&amp;gt; {        MyStore.handleResponse(response);    });&amp;lt;/script&amp;gt;  Easy  Intermediate  Advanced  Introduction  Intended Audience  This Document  Customization OptionsIntroductionThe SheerID JavaScript Library helps customers of SheerID quickly integrate gated offer programs (e.g. Student Verification) with their website and e-commerce workflows.We offer three levels of integration, depending on your need for customization.  Drop-in Form - the JavaScript Library renders the entire multi-step verification form for you in a lightbox overlay.  Custom Form - you render your own form, but interact with SheerID through the JavaScript Library, for greater control over the user experience.  REST API - you can bypass the JavaScript Library and interact with a REST API directly (typically for backend integrations).Intended AudienceThis document is for developers responsible for integrating a SheerID gated offer programs with their systems. The SheerID Javascript Library was designed for anyone with basic HTML/JavaScript skills. We support customization of look and feel through standard CSS hooks in the HTML (see Styling). The REST API is still available for more complex use cases.This DocumentFor installation instructions, and to get started with the code, see our quick start.See flows for an overview of how Gated Offer programs work.Need Help? Contact helpdesk@sheerid.com if you have any integration questions.Customization OptionsYou can totally customize.  Styling  Field Layout  InternationalizationHere’s an example of a new form methodnew window.sheerId.VerificationForm(document.getElementById('my-form'), '5bb2a0747f31442f3dd8e4be');Customize CustomizeREST API",
-    "url": "http://localhost:4000/integration/sdk",
+    "url": "http://localhost:4000/jekyll-test/integration/sdk",
     "relUrl": "/integration/sdk"
   },
   "19": {
     "id": "19",
     "title": "Segment Types",
     "content": "Segment TypesGo into detail about the various segment types here.StudentMilitaryIdentityTeacherFirst ResponderSeniorsYoung AdultEmnploymentBusinessCustom",
-    "url": "http://localhost:4000/getting-started/concepts/segments",
+    "url": "http://localhost:4000/jekyll-test/getting-started/concepts/segments",
     "relUrl": "/getting-started/concepts/segments"
   },
   "20": {
     "id": "20",
     "title": "Steps",
     "content": "StepsA SheerID verification happens one step at a time.Steps combine together into a flow. Read more about flows here.The REST API will return a step name for what it expects to receive next, to progress the Verification through its flow. You will only ever need to render one step at a time.See the JavaScript API docs for details about individual request and response objects.Collect Student Personal Info Step?mockStep=collectStudentPersonalInfoPending State?mockStep=pendingSuccess?mockStep=successDoc Upload?mockStep=docUploadDoc Review Limit Exceeded?mockStep=docReviewLimitExceededError?mockStep=errorLoadingThis is a special case where we show the loading spinner so it can be styled. Program information is not available for this application state.?mockStep=loading",
-    "url": "http://localhost:4000/getting-started/concepts/steps",
+    "url": "http://localhost:4000/jekyll-test/getting-started/concepts/steps",
     "relUrl": "/getting-started/concepts/steps"
   },
   "21": {
     "id": "21",
     "title": "Styling",
     "content": "StylingSheerID Base StylesWe encourage you to include SheerID’s stylesheet to provide basic style for the form.&amp;lt;link rel=&quot;stylesheet&quot; href=&quot;https://s3.amazonaws.com/com.sheerid.resources/common/kraken/0.0.2.sheerid.css&quot; type=&quot;text/css&quot; /&amp;gt;Override CSSYou can override styles by including your own stylesheet after SheerID’s.View an example of overwritten styles on JSFiddle hereDirect Step AccessWhen rendering the entire form, you can directly access any step in the verification flow with a query parameter. This makes it easy to refresh the page and see your css changes, without having to fill out the form repeatedly.We recommend styling each of these steps to suit your brand, since it’s probable that some customers will reach any/all of them.Note: Submitting these mock steps won’t work. To test the flow, see test rulesCollect Student Personal Info Step?mockStep=collectStudentPersonalInfoPending State?mockStep=pendingSuccess?mockStep=successDoc Upload?mockStep=docUploadDoc Review Limit Exceeded?mockStep=docReviewLimitExceededError?mockStep=errorLoadingThis is a special case where we show the loading spinner so it can be styled. Program information is not available for this application state.?mockStep=loading",
-    "url": "http://localhost:4000/integration/sdk/styling",
+    "url": "http://localhost:4000/jekyll-test/integration/sdk/styling",
     "relUrl": "/integration/sdk/styling"
   },
   "22": {
     "id": "22",
     "title": "Tasks",
     "content": "Tasks WIPJust going to put as many discrete tasks in here as possible, andgroup them later.Self-Service App (my.sheerid.com)      Create a program        Find your program ID        Customize  JavaScript Library  do some methodsREST API  make some callsSheer IDGetting StartedI. So you want to do a verification. If you want to verify people’s shit, then you have cometo the right place. We give you the tools to expose a verification utility on your website,confirm a user’s eligbility for an offer, and move onUI:    browser        render form        render fieldsSheer ID: GETTING STARTED  InstallationDo stuff on your website* Add css to the &amp;lt;head&amp;gt; of your html file.* Add the SheerID js library in the &amp;lt;body&amp;gt;.* Render the verification form in a div.Do stuff on my.sheeridWhen you do a verification tied to a program, you enter into the flow, starting with step 1. the current state of your flow will always be available usin the get state endpoint.Example: Do a new verification using an odd birth year  POST https://preview.sheerid.com/rest/v2/verification  Response  “verificationId”: “5c16e63955f50131bc52eaeb”  POST https://preview.sheerid.com/rest/v2/verification/5c16e63955f50131bc52eaeb/step/collectStudentPersonalInfo using odd year{  “firstName”: “Pete”,  “lastName”: “Davis”,  “email”: “davispete@gmail.com”,  “birthDate”: “1997-01-01”,  “universityId”: 3499,  “metadata”: {    “mascot”: “Bruins”  }  “currentStep”: “docUpload”  POST https://preview.sheerid.com/rest/v2/verification/5c16e63955f50131bc52eaeb/step/docUpload/2a08cf47a1f344d2b218f33b40ae8a92^^ docUpload step using the docupload token given in the previous responsecurl -X POST https://preview.sheerid.com/rest/v2/verification/5c16e63955f50131bc52eaeb/step/docUpload/2a08cf47a1f344d2b218f33b40ae8a92 -H “Content-Type: multipart/form-data” -F “file=[~/Desktop/SandboxTesting-ACCEPTED.png]”Success!!  “currentStep”: “success”",
-    "url": "http://localhost:4000/tutorials/tasks",
+    "url": "http://localhost:4000/jekyll-test/tutorials/tasks",
     "relUrl": "/tutorials/tasks"
   },
   "23": {
     "id": "23",
     "title": "Test Rules",
     "content": "Test RulesWhen a program is created at trial-preview.sheerid.com, it is in test mode.To test the flow, you can use the following rules:Test collectStudentPersonalInfo step  Use an even birth year to simulate instant success.  Use an odd birth year to simulate instant failure.Test docUpload stepAfter simulating instant failure (see above), you can simulate outcomes for the docUpload step as well.  Upload a file with the name SandboxTesting-ACCEPTED.png to simulate a review with a successful outcome.          Download SandboxTesting-ACCEPTED.png        Upload a file with the name SandboxTesting-REJECTED.png to simulate a review with a rejected outcome.          Download SandboxTesting-REJECTED.png      ",
-    "url": "http://localhost:4000/getting-started/verification/test-rules",
+    "url": "http://localhost:4000/jekyll-test/getting-started/verification/test-rules",
     "relUrl": "/getting-started/verification/test-rules"
   },
   "24": {
     "id": "24",
     "title": "Tutorials",
     "content": "TutorialsThere are a few ways to integrate.",
-    "url": "http://localhost:4000/tutorials",
+    "url": "http://localhost:4000/jekyll-test/tutorials",
     "relUrl": "/tutorials"
   }
 }
