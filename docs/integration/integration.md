@@ -34,6 +34,6 @@ It's a simple process!
 2. Add some code to your website to capture user input.
 3. Profit
 
-{% include note.html content="You can also customize this for your brand. See [link] for more details." %}
+
 
 
