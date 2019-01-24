@@ -11,7 +11,6 @@ grand_parent: Integration
 
 [*Make sure you have your program ID before starting*]
 
-{% include programs.md %}
 
 ## Retrive Theme (Optional)
 
