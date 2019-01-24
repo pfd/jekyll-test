@@ -17,7 +17,7 @@ In this quickstart you will:
 * Simulate successful and failed outcomes for two verification [steps](./verification/steps): 1) Collecting
 a student's personal information and 2) Document upload.
 
-{% include note.html content="You can edit styles either directly on your site via css or via the web UI which passes the styles to your form, assuming you are using the custom one." %}
+
 
 ## Create a Verification Program
 
