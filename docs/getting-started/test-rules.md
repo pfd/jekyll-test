@@ -1,15 +1,14 @@
 ---
 layout: default
 title: Test Rules
-permalink: /getting-started/test-rules
-nav_order: 3
-parent: Getting Started
-description: This page is doomed. Doesn't need to be a standalone page. Thinking of adding "test mode" as a concept page, as well as a glossary definition, and add `test-rules.html` as an include, to be referenced in tutorials.
+permalink: /getting-started/verification/test-rules
+nav_order: 5
+parent: The Verification Process
+grand_parent: Getting Started
 ---
 
-## Overview
-
-When a program is created at <a href="https://my.sheerid.com" target="_blank">my.sheerid.com</a>, it is in **test mode**.
+# Test Rules
+When a program is created at <a href="https://trial-preview.sheerid.com" target="_blank">trial-preview.sheerid.com</a>, it is in **test mode**.
 
 To test the [flow](./flows), you can use the following rules:
 

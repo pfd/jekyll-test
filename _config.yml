@@ -27,7 +27,8 @@ search_enabled: true
 
 # Build settings
 markdown: kramdown
-theme: just-the-docs
+# theme: just-the-docs
+remote-theme: pmarsceill/just-the-docs
 plugins:
   - jekyll-feed
 

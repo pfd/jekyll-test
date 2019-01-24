@@ -1,30 +1,15 @@
 ---
 layout: default
-title: SheerID JavaScript Library
+title: JavaScript SDK
 permalink: /integration/sdk
 nav_order: 2
 parent: Integration
 has_children: true
-description: The SheerID JavaScript library gives you complete control of the look and feel of your verification programs, providing methods to customize forms and interact with our REST API. Quickly integrate gated offer programs with your site and your e-commerce workflows.
 ---
 
-## Table of contents
+
+# SheerID JavaScript Library
 {: .no_toc }
-
-1. TOC
-{:toc}
-
-## Integration Options
-
-We offer three levels of integration, depending on your need for customization.
-
-* Drop-in Form—The JavaScript Library renders the entire multi-step verification form for you in a lightbox overlay.
-* Custom Form—Render your own form, but interact with SheerID through the JavaScript Library, for greater control over the user experience.
-* REST API—Bypass the JavaScript Library and interact with a REST API directly (typically for backend integrations).
-
-
-
-
 
 Integrating SheerID verification forms into your site comes in 3 forms:
 
@@ -102,7 +87,11 @@ sheerid.submitVerification(formData)
 </script>
 ```
 
+## Table of contents
+{: .no_toc .text-delta }
 
+1. TOC
+{:toc}
 
 ## Introduction 
 
@@ -118,6 +107,13 @@ We offer three levels of integration, depending on your need for customization.
 
 This document is for developers responsible for integrating a SheerID gated offer programs with their systems. The SheerID Javascript Library was designed for anyone with basic HTML/JavaScript skills. We support customization of look and feel through standard CSS hooks in the HTML (see [Styling](./styling)). The <a href="http://developer.sheerid.com" target="_blank">REST API</a> is still available for more complex use cases.
 
+## This Document
+For installation instructions, and to get started with the code, see our [quick start](../../getting-started/quickstart). 
+
+See [flows](docs/flows) for an overview of how Gated Offer programs work.
+ 
+Need Help? 
+Contact <a href="mailto:helpdesk@sheerid.com">helpdesk@sheerid.com</a> if you have any integration questions. 
 
 
 ## Customization Options

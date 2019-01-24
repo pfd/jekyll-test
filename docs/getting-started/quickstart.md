@@ -1,36 +1,18 @@
 ---
 layout: default
-title: SheerID Quickstart
+title: Quickstart
 permalink: /getting-started/quickstart
-nav_order: 2
+nav_order: 1
 parent: Getting Started
-description: Set up your first verification program with our easy-to-use campaign interface, and integrate a verification form into your site.
 ---
 
-## Table of contents
+# Quickstart
 {: .no_toc }
 
-1. TOC
-{:toc}
-
-## Steps
-
-In this Quickstart, we are going to create a Student verification program in the SheerID web app, and add a link
-to your site that renders a student verification in a lightbox window. Next
-we'll test the form for a successful verification using our
-test methods.
-
-1. Register SheerID account at my.sheerid.com.
-1. Design a verification program.
-1. Install the verification form on your site.
-1. Test
-
-## Create your account
+In this quickstart you will:
 
 
-## Create your first program
-
-* Create a test verification program at <a href="https://my.sheerid.com" target="_blank">my.sheerid.com</a>.
+* Create a test verification program at <a href="https://trial-preview.sheerid.com" target="_blank">trial-preview.sheerid.com</a>.
 * Install our JavaScript library and render a verification form for your test program.
 * Simulate successful and failed outcomes for two verification [steps](./verification/steps): 1) Collecting
 a student's personal information and 2) Document upload.

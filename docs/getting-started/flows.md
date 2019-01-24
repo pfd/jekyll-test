@@ -1,11 +1,14 @@
 ---
 layout: default
-title: Verification Flows
-permalink: /concepts/flows
+title: Flows
+permalink: /getting-started/concepts/flows
 nav_order: 3
 parent: Concepts
-description: "A SheerID _flow_ is the series of _steps_ that lead to a verification outcome. "
+grand_parent: Getting Started
 ---
+
+# Flows
+It's helpful to know how your customers might progress through a typical verification. We call this a "flow".
 
 Each point in the flow is a [step](./steps).
 

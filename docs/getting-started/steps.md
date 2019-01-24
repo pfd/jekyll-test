@@ -1,12 +1,15 @@
 ---
 layout: default
 title: Steps
-permalink: /concepts/steps
+permalink: /getting-started/concepts/steps
 nav_order: 2
 parent: Concepts
-description: "A SheerID verification happens one step at a time. Steps combine together into a flow. Read more about [flows](./flows) here. "
+grand_parent: Getting Started
 ---
 
+# Steps
+A SheerID verification happens one step at a time.
+Steps combine together into a flow. Read more about [flows](./flows) here.
 
 The REST API will return a step name for what it expects to receive next, to progress the Verification through its flow. You will only ever need to render one step at a time.
 
